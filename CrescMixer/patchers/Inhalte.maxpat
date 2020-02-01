@@ -76,7 +76,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -85,13 +84,13 @@
 					"patching_rect" : [ 34.0, 490.953051567077637, 39.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "gswitch2",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "gswitch2",
 							"parameter_enum" : [ "0", "1" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "gswitch2",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -492,7 +491,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 491.272689521312714, 217.387115061283112, 77.0, 22.0 ],
-					"text" : "set 2 1 Short"
+					"text" : "set 2 1 none"
 				}
 
 			}
@@ -538,7 +537,7 @@
 					"patching_rect" : [ 493.208914995193481, 105.787357270717621, 324.0, 43.413792967796326 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 344.793703675270081, 269.0, 240.0, 91.0 ],
-					"text" : "Short"
+					"text" : "none"
 				}
 
 			}
@@ -583,12 +582,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"linecount" : 38,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 955.791766405105591, 404.0, 338.0, 22.0 ],
-					"text" : "set 3 1 Long"
+					"patching_rect" : [ 955.791766405105591, 404.0, 338.0, 518.0 ],
+					"text" : "set 3 1 \"Welcome to\n                            ======\n                         //                \n                       //                            \n                       ||                     ||     __//      /===       /====       /====\n                       ||                     || __//        //       \\\\    //             //\n                       \\\\                    ||//            ||    ==//    \\\\____      ||\n                         \\\\                  ||               \\\\                       \\\\    \\\\            \n                            ======     ||                 \\\\====    ====//      ====  [_]        \n                  _______________________________________________________\n\nFeel free to play around with the mix and get the grip on basic functions of a mixing console.For an even better experience, make sure to check out our great DAW controller, the \n                   OLIVE !\nVV\n\nInputlist:\n\n1 - Kick    (Dynamic)\n2 - Snare  (Dynamic)\n3 - OH L   (Condenser, needs 48v Phantom Power)\n4 - OH R   (Condenser, needs 48v Phantom Power)\n5 - Bass   (Passive D.I.)\n6 - Guitar  (Dynamic)\n\nCresc. Mixer and Cresc. Olive were created by:\n\nRicardo Brueckenkamp-Miranda\nPhilip (Pip) Monheim\nTill Heuer\n\nStudents of Sound and Music Production,\nUniversity of Applied Sciences, Darmstadt\""
 				}
 
 			}
@@ -770,8 +770,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.033113837242126, 289.774384081363678, 48.177948653697968, 35.0 ],
-					"text" : "set 1 1 Item"
+					"patching_rect" : [ 126.033113837242126, 289.774384081363678, 50.177948653697968, 35.0 ],
+					"text" : "set 1 1 StartUp"
 				}
 
 			}
@@ -843,6 +843,7 @@
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 16.0,
 					"id" : "obj-142",
+					"linecount" : 34,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -851,8 +852,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 945.0, 15.0, 653.0, 315.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 34,
 					"presentation_rect" : [ 631.993144035339355, 39.787357270717621, 653.0, 315.0 ],
-					"text" : "Long"
+					"text" : "Welcome to\n                            ======\n                         //                \n                       //                            \n                       ||                     ||     __//      /===       /====       /====\n                       ||                     || __//        //       \\\\    //             //\n                       \\\\                    ||//            ||    ==//    \\\\____      ||\n                         \\\\                  ||               \\\\                       \\\\    \\\\            \n                            ======     ||                 \\\\====    ====//      ====  [_]        \n                  _______________________________________________________\n\nFeel free to play around with the mix and get the grip on basic functions of a mixing console.For an even better experience, make sure to check out our great DAW controller, the \n                   OLIVE !\nVV\n\nInputlist:\n\n1 - Kick    (Dynamic)\n2 - Snare  (Dynamic)\n3 - OH L   (Condenser, needs 48v Phantom Power)\n4 - OH R   (Condenser, needs 48v Phantom Power)\n5 - Bass   (Passive D.I.)\n6 - Guitar  (Dynamic)\n\nCresc. Mixer and Cresc. Olive were created by:\n\nRicardo Brueckenkamp-Miranda\nPhilip (Pip) Monheim\nTill Heuer\n\nStudents of Sound and Music Production,\nUniversity of Applied Sciences, Darmstadt"
 				}
 
 			}
@@ -871,7 +873,7 @@
 					"patching_rect" : [ 126.033113837242126, 182.235627412796021, 110.0, 26.413792967796326 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 471.793703675270081, 39.787357270717621, 110.0, 26.413792967796326 ],
-					"text" : "Item"
+					"text" : "StartUp"
 				}
 
 			}
@@ -925,7 +927,7 @@
 			}
 , 			{
 				"box" : 				{
-					"cellmap" : [ [ 3, 0, "Long" ], [ 3, 1, "\"Welcome to\n                            ======\n                         //                \n                       //                            \n                       ||                     ||     __//      /===       /====       /====\n                       ||                     || __//        //       \\    //             //\n                       \\                    ||//            ||    ==//    \\____      ||\n                         \\                  ||               \\                       \\    \\            \n                            ======     ||                 \\====    ====//      ====  [_]        \n                  _______________________________________________________\n\nFeel free to play around with the mix and get the grip on basic functions of a mixing console.For an even better experience, make sure to check out our great DAW controller, the \n                     /-   |  .       /::\n                     _/   |  |  /  _´    !\"" ], [ 3, 2, "GAIN\n\nThe first thing a signal going into an input channel encounters is the gain stage. \nBecause of the different amplitudes of incoming signals, an amplifier (the so-called 'pre amp') has to be set to raise or sometimes lower the input voltage (corresponding to amplitude) to a level most suitable for the mixing console's circuit design. \n\nThis apired level is known as 'Line Level'. For professional gear this is a level of" ], [ 3, 3, "PHANTOM POWER\n\nBla bla bla bla\n\n\nbla." ], [ 3, 4, "POLARITY\n\nuiuiuiui" ], [ 3, 5, "LOW CUT FILTER\n\nThis switch enables the 'low cut filter'. The input signal of this channel bla bla \n\nbla\n\nuse example" ], [ 3, 6, "FILTERBAND FREQUENCY" ], [ 3, 7, "FILTERBAND SLOPE" ], [ 3, 8, "FILTERBAND GAIN" ], [ 3, 9, "AUX SENDS" ], [ 3, 10, "test" ], [ 3, 12, "@" ], [ 3, 11, "@" ], [ 2, 0, "Short" ], [ 2, 1, "none" ], [ 2, 2, "Sets the pre-amps input gain." ], [ 2, 3, "Phantom Power" ], [ 2, 4, "Invert Polarity" ], [ 2, 5, "Low Cut Switch" ], [ 2, 6, "Frequency" ], [ 2, 7, "Q" ], [ 2, 8, "Band Gain" ], [ 2, 9, "Aux  Send" ], [ 2, 10, "test" ], [ 2, 12, "@" ], [ 2, 11, "@" ], [ 1, 0, "Item" ], [ 1, 1, "StartUp" ], [ 1, 2, "Gain" ], [ 1, 3, "48V" ], [ 1, 4, "Polarity" ], [ 1, 5, "LowCut" ], [ 1, 6, "Freq" ], [ 1, 7, "Q" ], [ 1, 8, "EQGain" ], [ 1, 9, "AuxSend" ], [ 1, 10, "test" ], [ 1, 12, "@" ], [ 1, 11, "@" ], [ 0, 0, "No" ], [ 0, 1, 1 ], [ 0, 2, 2 ], [ 0, 3, 3 ], [ 0, 4, 4 ], [ 0, 5, 5 ], [ 0, 6, 6 ], [ 0, 7, 7 ], [ 0, 8, 8 ], [ 0, 9, 9 ], [ 0, 10, 10 ], [ 0, 11, 11 ], [ 0, 12, 12 ], [ 0, 13, 13 ], [ 0, 14, 14 ], [ 0, 15, 15 ], [ 0, 16, 16 ], [ 0, 17, 17 ], [ 0, 18, 18 ], [ 0, 19, 19 ], [ 0, 20, 20 ], [ 0, 21, 21 ], [ 0, 22, 22 ], [ 0, 23, 23 ], [ 0, 24, 24 ], [ 0, 25, 25 ], [ 0, 26, 26 ], [ 0, 27, 27 ], [ 0, 28, 28 ], [ 0, 29, 29 ], [ 0, 30, 30 ], [ 0, 31, 31 ], [ 0, 32, 32 ], [ 0, 33, 33 ], [ 0, 34, 34 ], [ 0, 35, 35 ], [ 0, 36, 36 ], [ 0, 37, 37 ], [ 0, 38, 38 ], [ 0, 39, 39 ], [ 0, 40, 40 ], [ 0, 41, 41 ], [ 0, 42, 42 ], [ 0, 43, 43 ], [ 0, 44, 44 ], [ 0, 45, 45 ], [ 0, 46, 46 ], [ 0, 47, 47 ], [ 0, 48, 48 ], [ 0, 49, 49 ], [ 0, 50, 50 ], [ 0, 51, 51 ], [ 0, 52, 52 ], [ 0, 53, 53 ], [ 0, 54, 54 ], [ 0, 55, 55 ], [ 0, 56, 56 ], [ 0, 57, 57 ], [ 0, 58, 58 ], [ 0, 59, 59 ], [ 0, 60, 60 ], [ 0, 61, 61 ], [ 0, 62, 62 ], [ 0, 63, 63 ], [ 0, 64, 64 ], [ 0, 65, 65 ], [ 0, 66, 66 ], [ 0, 67, 67 ], [ 0, 68, 68 ], [ 0, 69, 69 ], [ 0, 70, 70 ], [ 0, 71, 71 ], [ 0, 72, 72 ], [ 0, 73, 73 ], [ 0, 74, 74 ], [ 0, 75, 75 ], [ 0, 76, 76 ], [ 0, 77, 77 ], [ 0, 78, 78 ], [ 0, 79, 79 ], [ 0, 80, 80 ], [ 0, 81, 81 ], [ 0, 82, 82 ], [ 0, 83, 83 ], [ 0, 84, 84 ], [ 0, 85, 85 ], [ 0, 86, 86 ], [ 0, 87, 87 ], [ 0, 88, 88 ], [ 0, 89, 89 ], [ 0, 90, 90 ], [ 0, 91, 91 ], [ 0, 92, 92 ], [ 0, 93, 93 ], [ 0, 94, 94 ], [ 0, 95, 95 ], [ 0, 96, 96 ], [ 0, 97, 97 ], [ 0, 98, 98 ], [ 0, 99, 99 ] ],
+					"cellmap" : [ [ 3, 0, "Long" ], [ 3, 1, "Welcome to\n                            ======\n                         //                \n                       //                            \n                       ||                     ||     __//      /===       /====       /====\n                       ||                     || __//        //       \\    //             //\n                       \\                    ||//            ||    ==//    \\____      ||\n                         \\                  ||               \\                       \\    \\            \n                            ======     ||                 \\====    ====//      ====  [_]        \n                  _______________________________________________________\n\nFeel free to play around with the mix and get the grip on basic functions of a mixing console.For an even better experience, make sure to check out our great DAW controller, the \n                   OLIVE !\nVV\n\nInputlist:\n\n1 - Kick    (Dynamic)\n2 - Snare  (Dynamic)\n3 - OH L   (Condenser, needs 48v Phantom Power)\n4 - OH R   (Condenser, needs 48v Phantom Power)\n5 - Bass   (Passive D.I.)\n6 - Guitar  (Dynamic)\n\nCresc. Mixer and Cresc. Olive were created by:\n\nRicardo Brueckenkamp-Miranda\nPhilip (Pip) Monheim\nTill Heuer\n\nStudents of Sound and Music Production,\nUniversity of Applied Sciences, Darmstadt" ], [ 3, 2, "GAIN\n\nThe first thing a signal going into an input channel encounters is the gain stage. \nBecause of the different amplitudes of incoming signals, an amplifier (the so-called 'pre amp') has to be set to raise or sometimes lower the input voltage (corresponding to amplitude) to a level most suitable for the mixing console's circuit design. \n\nThis apired level is known as 'Line Level'. For professional gear this is a level of" ], [ 3, 3, "PHANTOM POWER\n\nBla bla bla bla\n\n\nbla." ], [ 3, 4, "POLARITY\n\nuiuiuiui" ], [ 3, 5, "LOW CUT FILTER\n\nThis switch enables the 'low cut filter'. The input signal of this channel bla bla \n\nbla\n\nuse example" ], [ 3, 6, "FILTERBAND FREQUENCY" ], [ 3, 7, "FILTERBAND SLOPE" ], [ 3, 8, "FILTERBAND GAIN" ], [ 3, 9, "AUX SENDS" ], [ 3, 10, "test" ], [ 3, 12, "@" ], [ 3, 11, "@" ], [ 2, 0, "Short" ], [ 2, 1, "none" ], [ 2, 2, "Sets the pre-amps input gain." ], [ 2, 3, "Phantom Power" ], [ 2, 4, "Invert Polarity" ], [ 2, 5, "Low Cut Switch" ], [ 2, 6, "Frequency" ], [ 2, 7, "Q" ], [ 2, 8, "Band Gain" ], [ 2, 9, "Aux  Send" ], [ 2, 10, "test" ], [ 2, 12, "@" ], [ 2, 11, "@" ], [ 1, 0, "Item" ], [ 1, 1, "StartUp" ], [ 1, 2, "Gain" ], [ 1, 3, "48V" ], [ 1, 4, "Polarity" ], [ 1, 5, "LowCut" ], [ 1, 6, "Freq" ], [ 1, 7, "Q" ], [ 1, 8, "EQGain" ], [ 1, 9, "AuxSend" ], [ 1, 10, "test" ], [ 1, 12, "@" ], [ 1, 11, "@" ], [ 0, 0, "No" ], [ 0, 1, 1 ], [ 0, 2, 2 ], [ 0, 3, 3 ], [ 0, 4, 4 ], [ 0, 5, 5 ], [ 0, 6, 6 ], [ 0, 7, 7 ], [ 0, 8, 8 ], [ 0, 9, 9 ], [ 0, 10, 10 ], [ 0, 11, 11 ], [ 0, 12, 12 ], [ 0, 13, 13 ], [ 0, 14, 14 ], [ 0, 15, 15 ], [ 0, 16, 16 ], [ 0, 17, 17 ], [ 0, 18, 18 ], [ 0, 19, 19 ], [ 0, 20, 20 ], [ 0, 21, 21 ], [ 0, 22, 22 ], [ 0, 23, 23 ], [ 0, 24, 24 ], [ 0, 25, 25 ], [ 0, 26, 26 ], [ 0, 27, 27 ], [ 0, 28, 28 ], [ 0, 29, 29 ], [ 0, 30, 30 ], [ 0, 31, 31 ], [ 0, 32, 32 ], [ 0, 33, 33 ], [ 0, 34, 34 ], [ 0, 35, 35 ], [ 0, 36, 36 ], [ 0, 37, 37 ], [ 0, 38, 38 ], [ 0, 39, 39 ], [ 0, 40, 40 ], [ 0, 41, 41 ], [ 0, 42, 42 ], [ 0, 43, 43 ], [ 0, 44, 44 ], [ 0, 45, 45 ], [ 0, 46, 46 ], [ 0, 47, 47 ], [ 0, 48, 48 ], [ 0, 49, 49 ], [ 0, 50, 50 ], [ 0, 51, 51 ], [ 0, 52, 52 ], [ 0, 53, 53 ], [ 0, 54, 54 ], [ 0, 55, 55 ], [ 0, 56, 56 ], [ 0, 57, 57 ], [ 0, 58, 58 ], [ 0, 59, 59 ], [ 0, 60, 60 ], [ 0, 61, 61 ], [ 0, 62, 62 ], [ 0, 63, 63 ], [ 0, 64, 64 ], [ 0, 65, 65 ], [ 0, 66, 66 ], [ 0, 67, 67 ], [ 0, 68, 68 ], [ 0, 69, 69 ], [ 0, 70, 70 ], [ 0, 71, 71 ], [ 0, 72, 72 ], [ 0, 73, 73 ], [ 0, 74, 74 ], [ 0, 75, 75 ], [ 0, 76, 76 ], [ 0, 77, 77 ], [ 0, 78, 78 ], [ 0, 79, 79 ], [ 0, 80, 80 ], [ 0, 81, 81 ], [ 0, 82, 82 ], [ 0, 83, 83 ], [ 0, 84, 84 ], [ 0, 85, 85 ], [ 0, 86, 86 ], [ 0, 87, 87 ], [ 0, 88, 88 ], [ 0, 89, 89 ], [ 0, 90, 90 ], [ 0, 91, 91 ], [ 0, 92, 92 ], [ 0, 93, 93 ], [ 0, 94, 94 ], [ 0, 95, 95 ], [ 0, 96, 96 ], [ 0, 97, 97 ], [ 0, 98, 98 ], [ 0, 99, 99 ] ],
 					"colhead" : 1,
 					"cols" : 4,
 					"colwidth" : 150,

@@ -39,6 +39,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1923.0, 239.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 12.0,
+					"id" : "obj-28",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 582.258067607879639, 655.928269863128662, 151.843091368675232, 34.0 ],
+					"text" : "/track/active : 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -55,7 +81,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1581.30645751953125, 98.0, 48.0, 22.0 ],
 					"text" : "Vislong"
 				}
@@ -295,13 +321,13 @@
 					"patching_rect" : [ 1581.30645751953125, 43.290320873260498, 39.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "gswitch2[1]",
 							"parameter_enum" : [ "0", "1" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "gswitch2[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
-							"parameter_initial" : [ 1 ],
-							"parameter_shortname" : "gswitch2[1]"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -345,13 +371,13 @@
 					"patching_rect" : [ 1455.0, 678.428269863128662, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 1.0 ],
+							"parameter_shortname" : "toggle[4]",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "toggle[4]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
-							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "toggle[4]"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -564,8 +590,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 12,
 					"numoutlets" : 12,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 766.888745784759521, 393.74013970690919, 283.5, 22.0 ],
+					"outlettype" : [ "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 766.888745784759521, 393.74013970690919, 134.5, 22.0 ],
 					"text" : "osc"
 				}
 
@@ -688,26 +714,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Guitar.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/Guitar.wav",
 								"filename" : "Guitar.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -741,26 +767,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Bass.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/Bass.wav",
 								"filename" : "Bass.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -794,26 +820,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "OH_R_48V.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/OH_R_48V.wav",
 								"filename" : "OH_R_48V.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -847,26 +873,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "OH_L_48V.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/OH_L_48V.wav",
 								"filename" : "OH_L_48V.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -900,26 +926,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Snare1.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/Snare1.wav",
 								"filename" : "Snare1.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -965,26 +991,26 @@
 					"clipheight" : 92.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Kick.wav",
+								"absolutepath" : "/Users/pip/Dropbox/CrescOlive/CrescOlive/CrescMixer/media/Kick.wav",
 								"filename" : "Kick.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
 									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
 									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -1157,8 +1183,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1581.30645751953125, 131.394291959772772, 20.0, 20.0 ]
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1581.30645751953125, 131.394291959772772, 20.0, 20.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "toggle[80]",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
+							"parameter_longname" : "toggle[80]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1
+						}
+
+					}
+,
+					"varname" : "toggle[1]"
 				}
 
 			}
@@ -1221,8 +1261,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1315.258067607879639, 854.928269863128662, 45.0, 22.0 ],
-					"text" : "Inhalte"
+					"patching_rect" : [ 1315.258067607879639, 854.928269863128662, 44.0, 22.0 ],
+					"text" : "inhalte"
 				}
 
 			}
@@ -1315,8 +1355,7 @@
 					"fontname" : "Helvetica Neue",
 					"fontsize" : 16.0,
 					"id" : "obj-142",
-					"ignoreclick" : 1,
-					"linecount" : 8,
+					"linecount" : 34,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -1325,11 +1364,11 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1677.057443141937256, 335.0, 653.0, 315.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
+					"presentation_linecount" : 34,
 					"presentation_rect" : [ 896.0, 50.0, 653.0, 315.0 ],
 					"readonly" : 1,
 					"rounded" : 16.0,
-					"text" : "\"GAIN\n\nThe first thing a signal going into an input channel encounters is the gain stage. \nBecause of the different amplitudes of incoming signals, an amplifier (the so-called 'pre amp') has to be set to raise or sometimes lower the input voltage (corresponding to amplitude) to a level most suitable for the mixing console's circuit design. \n\nThis apired level is known as 'Line Level'. For professional gear this is a level of\""
+					"text" : "\"Welcome to\n                            ======\n                         //                \n                       //                            \n                       ||                     ||     __//      /===       /====       /====\n                       ||                     || __//        //       \\\\    //             //\n                       \\\\                    ||//            ||    ==//    \\\\____      ||\n                         \\\\                  ||               \\\\                       \\\\    \\\\            \n                            ======     ||                 \\\\====    ====//      ====  [_]        \n                  _______________________________________________________\n\nFeel free to play around with the mix and get the grip on basic functions of a mixing console.For an even better experience, make sure to check out our great DAW controller, the \n                   OLIVE !\nVV\n\nInputlist:\n\n1 - Kick    (Dynamic)\n2 - Snare  (Dynamic)\n3 - OH L   (Condenser, needs 48v Phantom Power)\n4 - OH R   (Condenser, needs 48v Phantom Power)\n5 - Bass   (Passive D.I.)\n6 - Guitar  (Dynamic)\n\nCresc. Mixer and Cresc. Olive were created by:\n\nRicardo Brueckenkamp-Miranda\nPhilip (Pip) Monheim\nTill Heuer\n\nStudents of Sound and Music Production,\nUniversity of Applied Sciences, Darmstadt\""
 				}
 
 			}
@@ -1531,6 +1570,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -1726,7 +1774,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 1 ],
-					"midpoints" : [ 232.343091368675232, 510.0, 753.0, 510.0, 753.0, 378.0, 800.434200330214026, 378.0 ],
+					"midpoints" : [ 232.343091368675232, 510.0, 753.0, 510.0, 753.0, 378.0, 786.888745784759521, 378.0 ],
 					"source" : [ "obj-32", 1 ]
 				}
 
@@ -1734,7 +1782,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 2 ],
-					"midpoints" : [ 355.407608270645142, 510.0, 753.0, 510.0, 753.0, 378.0, 824.479654875668643, 378.0 ],
+					"midpoints" : [ 355.407608270645142, 510.0, 753.0, 510.0, 753.0, 378.0, 797.388745784759521, 378.0 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
@@ -1770,7 +1818,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 3 ],
-					"midpoints" : [ 478.472125172615051, 510.0, 753.0, 510.0, 753.0, 378.0, 848.525109421123148, 378.0 ],
+					"midpoints" : [ 478.472125172615051, 510.0, 753.0, 510.0, 753.0, 378.0, 807.888745784759521, 378.0 ],
 					"source" : [ "obj-37", 1 ]
 				}
 
@@ -1785,7 +1833,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 4 ],
-					"midpoints" : [ 601.536642074584961, 510.0, 753.0, 510.0, 753.0, 378.0, 872.570563966577765, 378.0 ],
+					"midpoints" : [ 601.536642074584961, 510.0, 753.0, 510.0, 753.0, 378.0, 818.388745784759521, 378.0 ],
 					"source" : [ "obj-38", 1 ]
 				}
 
@@ -1800,7 +1848,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 5 ],
-					"midpoints" : [ 724.601158976554871, 501.0, 753.0, 501.0, 753.0, 378.0, 896.616018512032269, 378.0 ],
+					"midpoints" : [ 724.601158976554871, 501.0, 753.0, 501.0, 753.0, 378.0, 828.888745784759521, 378.0 ],
 					"source" : [ "obj-39", 1 ]
 				}
 
@@ -1860,7 +1908,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 10 ],
-					"midpoints" : [ 1046.547688126564026, 861.0, 1068.0, 861.0, 1068.0, 378.0, 1016.843291239305017, 378.0 ],
+					"midpoints" : [ 1046.547688126564026, 861.0, 1068.0, 861.0, 1068.0, 378.0, 881.388745784759521, 378.0 ],
 					"source" : [ "obj-46", 6 ]
 				}
 
@@ -1868,7 +1916,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 9 ],
-					"midpoints" : [ 902.547688126564026, 870.0, 1068.0, 870.0, 1068.0, 378.0, 992.7978366938504, 378.0 ],
+					"midpoints" : [ 902.547688126564026, 870.0, 1068.0, 870.0, 1068.0, 378.0, 870.888745784759521, 378.0 ],
 					"source" : [ "obj-46", 3 ]
 				}
 
@@ -1876,7 +1924,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 8 ],
-					"midpoints" : [ 854.547688126564026, 870.0, 1068.0, 870.0, 1068.0, 378.0, 968.752382148395895, 378.0 ],
+					"midpoints" : [ 854.547688126564026, 870.0, 1068.0, 870.0, 1068.0, 378.0, 860.388745784759521, 378.0 ],
 					"source" : [ "obj-46", 2 ]
 				}
 
@@ -1884,7 +1932,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 7 ],
-					"midpoints" : [ 806.547688126564026, 870.0, 735.0, 870.0, 735.0, 510.0, 753.0, 510.0, 753.0, 378.0, 944.706927602941278, 378.0 ],
+					"midpoints" : [ 806.547688126564026, 870.0, 735.0, 870.0, 735.0, 510.0, 753.0, 510.0, 753.0, 378.0, 849.888745784759521, 378.0 ],
 					"source" : [ "obj-46", 1 ]
 				}
 
@@ -1892,7 +1940,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-62", 6 ],
-					"midpoints" : [ 758.547688126564026, 861.0, 735.0, 861.0, 735.0, 511.0, 753.0, 511.0, 753.0, 378.0, 920.661473057486774, 378.0 ],
+					"midpoints" : [ 758.547688126564026, 861.0, 735.0, 861.0, 735.0, 511.0, 753.0, 511.0, 753.0, 378.0, 839.388745784759521, 378.0 ],
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -2047,8 +2095,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-62", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 3 ],
-					"midpoints" : [ 800.434200330214026, 426.0, 744.0, 426.0, 744.0, 258.0, 240.0, 258.0, 240.0, 294.0, 232.343091368675232, 294.0 ],
+					"midpoints" : [ 786.888745784759521, 426.0, 744.0, 426.0, 744.0, 258.0, 240.0, 258.0, 240.0, 294.0, 232.343091368675232, 294.0 ],
 					"source" : [ "obj-62", 1 ]
 				}
 
@@ -2056,7 +2112,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 3 ],
-					"midpoints" : [ 824.479654875668643, 426.0, 744.0, 426.0, 744.0, 258.0, 363.0, 258.0, 363.0, 294.0, 355.407608270645142, 294.0 ],
+					"midpoints" : [ 797.388745784759521, 426.0, 744.0, 426.0, 744.0, 258.0, 363.0, 258.0, 363.0, 294.0, 355.407608270645142, 294.0 ],
 					"source" : [ "obj-62", 2 ]
 				}
 
@@ -2064,7 +2120,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 3 ],
-					"midpoints" : [ 848.525109421123148, 426.0, 744.0, 426.0, 744.0, 258.0, 486.0, 258.0, 486.0, 294.0, 478.472125172615051, 294.0 ],
+					"midpoints" : [ 807.888745784759521, 426.0, 744.0, 426.0, 744.0, 258.0, 486.0, 258.0, 486.0, 294.0, 478.472125172615051, 294.0 ],
 					"source" : [ "obj-62", 3 ]
 				}
 
@@ -2072,7 +2128,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 3 ],
-					"midpoints" : [ 872.570563966577765, 426.0, 744.0, 426.0, 744.0, 258.0, 609.0, 258.0, 609.0, 294.0, 601.536642074584961, 294.0 ],
+					"midpoints" : [ 818.388745784759521, 426.0, 744.0, 426.0, 744.0, 258.0, 609.0, 258.0, 609.0, 294.0, 601.536642074584961, 294.0 ],
 					"source" : [ "obj-62", 4 ]
 				}
 
@@ -2080,7 +2136,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 3 ],
-					"midpoints" : [ 896.616018512032269, 426.0, 744.0, 426.0, 744.0, 294.0, 724.601158976554871, 294.0 ],
+					"midpoints" : [ 828.888745784759521, 426.0, 744.0, 426.0, 744.0, 294.0, 724.601158976554871, 294.0 ],
 					"source" : [ "obj-62", 5 ]
 				}
 
@@ -2088,7 +2144,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 4 ],
-					"midpoints" : [ 1016.843291239305017, 576.0, 1046.547688126564026, 576.0 ],
+					"midpoints" : [ 881.388745784759521, 576.0, 1046.547688126564026, 576.0 ],
 					"source" : [ "obj-62", 10 ]
 				}
 
@@ -2096,7 +2152,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 3 ],
-					"midpoints" : [ 992.7978366938504, 576.0, 974.547688126564026, 576.0 ],
+					"midpoints" : [ 870.888745784759521, 576.0, 974.547688126564026, 576.0 ],
 					"source" : [ "obj-62", 9 ]
 				}
 
@@ -2104,7 +2160,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 2 ],
-					"midpoints" : [ 968.752382148395895, 576.0, 902.547688126564026, 576.0 ],
+					"midpoints" : [ 860.388745784759521, 576.0, 902.547688126564026, 576.0 ],
 					"source" : [ "obj-62", 8 ]
 				}
 
@@ -2112,7 +2168,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 1 ],
-					"midpoints" : [ 944.706927602941278, 576.0, 830.547688126564026, 576.0 ],
+					"midpoints" : [ 849.888745784759521, 576.0, 830.547688126564026, 576.0 ],
 					"source" : [ "obj-62", 7 ]
 				}
 
@@ -2120,7 +2176,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
-					"midpoints" : [ 920.661473057486774, 576.0, 758.547688126564026, 576.0 ],
+					"midpoints" : [ 839.388745784759521, 576.0, 758.547688126564026, 576.0 ],
+					"order" : 1,
 					"source" : [ "obj-62", 6 ]
 				}
 
@@ -2241,299 +2298,395 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-46::obj-15::obj-12" : [ "live.gain~[55]", "live.gain~[1]", 0 ],
-			"obj-46::obj-15::obj-116" : [ "toggle[3]", "toggle[3]", 0 ],
-			"obj-105::obj-12" : [ "toggle[5]", "toggle", 0 ],
-			"obj-39::obj-8::obj-133" : [ "GAIN[8]", "GAIN", 0 ],
-			"obj-38::obj-8::obj-136" : [ "Q[9]", "Q", 0 ],
-			"obj-32::obj-30::obj-1" : [ "AUX 1[37]", "AUX 3", 0 ],
-			"obj-37::obj-8::obj-70" : [ "FREQUENCY[10]", "FREQ", 0 ],
-			"obj-20::obj-30::obj-47" : [ "live.gain~[48]", "live.gain~[1]", 0 ],
-			"obj-46::obj-15::obj-50" : [ "live.gain~[56]", "live.gain~[1]", 0 ],
-			"obj-39::obj-8::obj-136" : [ "Q[8]", "Q", 0 ],
 			"obj-38::obj-8::obj-70" : [ "FREQUENCY[3]", "FREQ", 0 ],
-			"obj-32::obj-60::obj-7" : [ "GAIN[28]", "GAIN", 0 ],
-			"obj-37::obj-8::obj-108" : [ "Q[11]", "Q", 0 ],
-			"obj-20::obj-93::obj-3" : [ "textbutton[5]", "textbutton", 0 ],
-			"obj-46::obj-15::obj-7" : [ "AUX 1[47]", "AUX 4", 0 ],
-			"obj-39::obj-8::obj-137" : [ "FREQUENCY[7]", "FREQ", 0 ],
-			"obj-38::obj-30::obj-3" : [ "AUX 1[30]", "AUX 1", 0 ],
-			"obj-34::obj-8::obj-108" : [ "Q[16]", "Q", 0 ],
-			"obj-37::obj-8::obj-119" : [ "GAIN[17]", "GAIN", 0 ],
-			"obj-32::obj-8::obj-123" : [ "FREQUENCY[19]", "FREQ", 0 ],
-			"obj-117" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
-			"obj-39::obj-93::obj-3" : [ "textbutton", "textbutton", 0 ],
-			"obj-38::obj-39" : [ "live.gain~[38]", "live.gain~[31]", 0 ],
-			"obj-34::obj-8::obj-119" : [ "GAIN[22]", "GAIN", 0 ],
-			"obj-37::obj-30::obj-49" : [ "live.gain~[5]", "live.gain~[1]", 0 ],
-			"obj-32::obj-8::obj-136" : [ "Q[20]", "Q", 0 ],
-			"obj-34::obj-30::obj-2" : [ "AUX 1[33]", "AUX 2", 0 ],
-			"obj-20::obj-8::obj-122" : [ "Q[23]", "Q", 0 ],
-			"obj-38::obj-30::obj-50" : [ "live.gain~[3]", "live.gain~[1]", 0 ],
-			"obj-37::obj-93::obj-3" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-32::obj-8::obj-70" : [ "FREQUENCY[18]", "FREQ", 0 ],
-			"obj-34::obj-30::obj-50" : [ "live.gain~[7]", "live.gain~[1]", 0 ],
-			"obj-20::obj-8::obj-133" : [ "GAIN[38]", "GAIN", 0 ],
-			"obj-39::obj-30::obj-1" : [ "AUX 1[24]", "AUX 3", 0 ],
-			"obj-38::obj-8::obj-108" : [ "Q[5]", "Q", 0 ],
-			"obj-32::obj-30::obj-47" : [ "live.gain~[10]", "live.gain~[1]", 0 ],
-			"obj-105::obj-47" : [ "toggle[6]", "toggle[1]", 0 ],
-			"obj-39::obj-30::obj-47" : [ "live.gain~[29]", "live.gain~[1]", 0 ],
-			"obj-34::obj-60::obj-2" : [ "live.gain~[45]", "live.gain~", 0 ],
-			"obj-20::obj-30::obj-49" : [ "live.gain~[49]", "live.gain~[1]", 0 ],
-			"obj-39::obj-30::obj-3" : [ "AUX 1[27]", "AUX 1", 0 ],
-			"obj-38::obj-8::obj-119" : [ "GAIN[12]", "GAIN", 0 ],
-			"obj-32::obj-93::obj-3" : [ "textbutton[4]", "textbutton", 0 ],
-			"obj-1::obj-6" : [ "gswitch2", "gswitch2", 0 ],
-			"obj-37::obj-8::obj-137" : [ "FREQUENCY[9]", "FREQ", 0 ],
-			"obj-20::obj-30::obj-51" : [ "live.gain~[47]", "live.gain~[1]", 0 ],
 			"obj-38::obj-30::obj-1" : [ "AUX 1[31]", "AUX 3", 0 ],
-			"obj-34::obj-8::obj-137" : [ "FREQUENCY[14]", "FREQ", 0 ],
-			"obj-37::obj-8::obj-82" : [ "GAIN[16]", "GAIN", 0 ],
-			"obj-20::obj-60::obj-2" : [ "live.gain~[51]", "live.gain~", 0 ],
-			"obj-38::obj-60::obj-7" : [ "GAIN[13]", "GAIN", 0 ],
-			"obj-34::obj-8::obj-82" : [ "GAIN[21]", "GAIN", 0 ],
-			"obj-20::obj-51::obj-18" : [ "live.dial[4]", "Pan", 0 ],
-			"obj-7::obj-22" : [ "filtergraph~", "filtergraph~", 0 ],
-			"obj-37::obj-30::obj-2" : [ "AUX 1[2]", "AUX 2", 0 ],
-			"obj-32::obj-8::obj-108" : [ "Q[19]", "Q", 0 ],
-			"obj-39::obj-30::obj-51" : [ "live.gain~[28]", "live.gain~[1]", 0 ],
-			"obj-34::obj-8::obj-109" : [ "FREQUENCY[13]", "FREQ", 0 ],
-			"obj-20::obj-8::obj-69" : [ "Q[24]", "Q", 0 ],
-			"obj-38::obj-30::obj-49" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-37::obj-30::obj-50" : [ "live.gain~[39]", "live.gain~[1]", 0 ],
-			"obj-32::obj-8::obj-119" : [ "GAIN[27]", "GAIN", 0 ],
-			"obj-81::obj-19" : [ "textbutton[7]", "textbutton[6]", 0 ],
-			"obj-34::obj-30::obj-4" : [ "AUX 1[32]", "AUX 4", 0 ],
-			"obj-20::obj-8::obj-105" : [ "GAIN[39]", "GAIN", 0 ],
-			"obj-46::obj-15::obj-13" : [ "live.gain~[57]", "live.gain~[1]", 0 ],
-			"obj-46::obj-259" : [ "gain~", "gain~", 0 ],
-			"obj-38::obj-8::obj-137" : [ "FREQUENCY[2]", "FREQ", 0 ],
-			"obj-32::obj-30::obj-49" : [ "live.gain~[11]", "live.gain~[1]", 0 ],
-			"obj-46::obj-15::obj-4" : [ "AUX 1[44]", "AUX 1", 0 ],
-			"obj-38::obj-51::obj-18" : [ "live.dial[1]", "Pan", 0 ],
-			"obj-34::obj-93::obj-3" : [ "textbutton[3]", "textbutton", 0 ],
-			"obj-20::obj-8::obj-123" : [ "FREQUENCY[21]", "FREQ", 0 ],
-			"obj-38::obj-8::obj-82" : [ "GAIN[11]", "GAIN", 0 ],
-			"obj-32::obj-30::obj-51" : [ "live.gain~[9]", "live.gain~[1]", 0 ],
-			"obj-37::obj-8::obj-109" : [ "FREQUENCY[12]", "FREQ", 0 ],
-			"obj-37::obj-51::obj-18" : [ "live.dial[2]", "Pan", 0 ],
-			"obj-20::obj-30::obj-4" : [ "AUX 1[42]", "AUX 4", 0 ],
-			"obj-38::obj-8::obj-109" : [ "FREQUENCY[1]", "FREQ", 0 ],
-			"obj-32::obj-39" : [ "live.gain~[14]", "live.gain~[31]", 0 ],
-			"obj-39::obj-60::obj-7" : [ "GAIN[35]", "GAIN", 0 ],
-			"obj-37::obj-8::obj-122" : [ "Q[14]", "Q", 0 ],
-			"obj-32::obj-51::obj-18" : [ "live.dial[3]", "Pan", 0 ],
-			"obj-38::obj-30::obj-4" : [ "AUX 1[28]", "AUX 4", 0 ],
-			"obj-34::obj-8::obj-122" : [ "Q[15]", "Q", 0 ],
-			"obj-39::obj-60::obj-2" : [ "live.gain~[37]", "live.gain~", 0 ],
-			"obj-37::obj-8::obj-133" : [ "GAIN[15]", "GAIN", 0 ],
-			"obj-32::obj-8::obj-137" : [ "FREQUENCY[17]", "FREQ", 0 ],
-			"obj-46::obj-15::obj-6" : [ "AUX 1[46]", "AUX 3", 0 ],
-			"obj-39::obj-8::obj-119" : [ "GAIN[6]", "GAIN", 0 ],
-			"obj-34::obj-8::obj-133" : [ "GAIN[20]", "GAIN", 0 ],
-			"obj-37::obj-30::obj-4" : [ "AUX 1[1]", "AUX 4", 0 ],
-			"obj-32::obj-8::obj-82" : [ "GAIN[26]", "GAIN", 0 ],
-			"obj-39::obj-8::obj-82" : [ "GAIN[5]", "GAIN", 0 ],
-			"obj-39::obj-8::obj-122" : [ "Q[4]", "Q", 0 ],
-			"obj-34::obj-30::obj-3" : [ "AUX 1[34]", "AUX 1", 0 ],
-			"obj-20::obj-8::obj-136" : [ "Q[25]", "Q", 0 ],
-			"obj-39::obj-30::obj-2" : [ "AUX 1[26]", "AUX 2", 0 ],
-			"obj-37::obj-60::obj-7" : [ "GAIN[18]", "GAIN", 0 ],
-			"obj-32::obj-8::obj-109" : [ "FREQUENCY[20]", "FREQ", 0 ],
-			"obj-109" : [ "toggle[4]", "toggle[4]", 0 ],
-			"obj-39::obj-8::obj-123" : [ "FREQUENCY[4]", "FREQ", 0 ],
-			"obj-39::obj-8::obj-69" : [ "Q[3]", "Q", 0 ],
-			"obj-39::obj-30::obj-49" : [ "live.gain~[26]", "live.gain~[1]", 0 ],
-			"obj-34::obj-30::obj-1" : [ "AUX 1[35]", "AUX 3", 0 ],
-			"obj-20::obj-8::obj-70" : [ "FREQUENCY[22]", "FREQ", 0 ],
-			"obj-38::obj-8::obj-122" : [ "Q[10]", "Q", 0 ],
-			"obj-32::obj-30::obj-50" : [ "live.gain~[12]", "live.gain~[1]", 0 ],
-			"obj-46::obj-15::obj-105" : [ "toggle[1]", "toggle[1]", 0 ],
-			"obj-39::obj-8::obj-105" : [ "GAIN[7]", "GAIN", 0 ],
-			"obj-39::obj-8::obj-70" : [ "FREQUENCY[8]", "FREQ", 0 ],
-			"obj-34::obj-39" : [ "live.gain~[46]", "live.gain~[31]", 0 ],
-			"obj-20::obj-30::obj-3" : [ "AUX 1[40]", "AUX 1", 0 ],
-			"obj-105::obj-11" : [ "toggle[7]", "toggle[1]", 0 ],
-			"obj-38::obj-8::obj-133" : [ "GAIN[10]", "GAIN", 0 ],
-			"obj-32::obj-60::obj-2" : [ "live.gain~[13]", "live.gain~", 0 ],
-			"obj-39::obj-8::obj-108" : [ "Q[7]", "Q", 0 ],
-			"obj-37::obj-8::obj-69" : [ "Q[13]", "Q", 0 ],
-			"obj-20::obj-30::obj-1" : [ "AUX 1[41]", "AUX 3", 0 ],
-			"obj-38::obj-30::obj-2" : [ "AUX 1[29]", "AUX 2", 0 ],
-			"obj-34::obj-8::obj-69" : [ "Q[18]", "Q", 0 ],
-			"obj-39::obj-8::obj-109" : [ "FREQUENCY[6]", "FREQ", 0 ],
-			"obj-37::obj-8::obj-105" : [ "GAIN[14]", "GAIN", 0 ],
-			"obj-20::obj-39" : [ "live.gain~[52]", "live.gain~[31]", 0 ],
-			"obj-38::obj-60::obj-2" : [ "live.gain~[30]", "live.gain~", 0 ],
-			"obj-34::obj-8::obj-105" : [ "GAIN[19]", "GAIN", 0 ],
-			"obj-81::obj-15" : [ "live.gain~[53]", "live.gain~", 0 ],
-			"obj-39::obj-30::obj-4" : [ "AUX 1[25]", "AUX 4", 0 ],
+			"obj-34::obj-8::obj-18" : [ "toggle[45]", "toggle[17]", 0 ],
 			"obj-38::obj-30::obj-51" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
-			"obj-37::obj-30::obj-3" : [ "AUX 1[3]", "AUX 1", 0 ],
-			"obj-32::obj-8::obj-122" : [ "Q[22]", "Q", 0 ],
-			"obj-34::obj-30::obj-51" : [ "live.gain~[8]", "live.gain~[1]", 0 ],
-			"obj-20::obj-8::obj-108" : [ "Q[26]", "Q", 0 ],
-			"obj-46::obj-15::obj-102" : [ "toggle", "toggle", 0 ],
-			"obj-39::obj-51::obj-18" : [ "live.dial[13]", "Pan", 0 ],
-			"obj-37::obj-30::obj-1" : [ "AUX 1[4]", "AUX 3", 0 ],
-			"obj-37::obj-39" : [ "live.gain~[43]", "live.gain~[31]", 0 ],
-			"obj-32::obj-8::obj-133" : [ "GAIN[25]", "GAIN", 0 ],
-			"obj-7::obj-19" : [ "textbutton[6]", "textbutton[6]", 0 ],
-			"obj-34::obj-30::obj-47" : [ "live.gain~[44]", "live.gain~[1]", 0 ],
-			"obj-20::obj-8::obj-119" : [ "GAIN[36]", "GAIN", 0 ],
-			"obj-39::obj-39" : [ "live.gain~[36]", "live.gain~[31]", 0 ],
-			"obj-38::obj-8::obj-69" : [ "Q[6]", "Q", 0 ],
-			"obj-32::obj-30::obj-4" : [ "AUX 1[38]", "AUX 4", 0 ],
-			"obj-34::obj-60::obj-7" : [ "GAIN[23]", "GAIN", 0 ],
-			"obj-20::obj-30::obj-2" : [ "AUX 1[43]", "AUX 2", 0 ],
-			"obj-38::obj-8::obj-105" : [ "GAIN[9]", "GAIN", 0 ],
-			"obj-38::obj-30::obj-47" : [ "live.gain~[2]", "live.gain~[1]", 0 ],
-			"obj-32::obj-30::obj-2" : [ "AUX 1[39]", "AUX 2", 0 ],
-			"obj-37::obj-8::obj-123" : [ "FREQUENCY[11]", "FREQ", 0 ],
-			"obj-20::obj-30::obj-50" : [ "live.gain~[50]", "live.gain~[1]", 0 ],
-			"obj-7::obj-48" : [ "filtergraph~[1]", "filtergraph~[1]", 0 ],
-			"obj-38::obj-8::obj-123" : [ "FREQUENCY[5]", "FREQ", 0 ],
-			"obj-34::obj-8::obj-123" : [ "FREQUENCY[16]", "FREQ", 0 ],
-			"obj-37::obj-8::obj-136" : [ "Q[12]", "Q", 0 ],
-			"obj-20::obj-60::obj-7" : [ "GAIN[40]", "GAIN", 0 ],
-			"obj-38::obj-93::obj-3" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-37::obj-8::obj-11" : [ "toggle[41]", "toggle[12]", 0 ],
+			"obj-32::obj-8::obj-18" : [ "toggle[63]", "toggle[17]", 0 ],
+			"obj-39::obj-8::obj-53" : [ "toggle[23]", "toggle[11]", 0 ],
+			"obj-38::obj-8::obj-53" : [ "toggle[11]", "toggle[11]", 0 ],
 			"obj-34::obj-8::obj-136" : [ "Q[17]", "Q", 0 ],
-			"obj-37::obj-30::obj-51" : [ "live.gain~[40]", "live.gain~[1]", 0 ],
-			"obj-32::obj-8::obj-69" : [ "Q[21]", "Q", 0 ],
-			"obj-34::obj-8::obj-70" : [ "FREQUENCY[15]", "FREQ", 0 ],
-			"obj-20::obj-8::obj-137" : [ "FREQUENCY[23]", "FREQ", 0 ],
-			"obj-46::obj-15::obj-14" : [ "live.gain~[54]", "live.gain~[1]", 0 ],
-			"obj-37::obj-30::obj-47" : [ "live.gain~[41]", "live.gain~[1]", 0 ],
-			"obj-32::obj-8::obj-105" : [ "GAIN[24]", "GAIN", 0 ],
-			"obj-46::obj-15::obj-5" : [ "AUX 1[45]", "AUX 2", 0 ],
-			"obj-39::obj-30::obj-50" : [ "live.gain~[27]", "live.gain~[1]", 0 ],
-			"obj-34::obj-30::obj-49" : [ "live.gain~[6]", "live.gain~[1]", 0 ],
-			"obj-20::obj-8::obj-82" : [ "GAIN[37]", "GAIN", 0 ],
-			"obj-37::obj-60::obj-2" : [ "live.gain~[42]", "live.gain~", 0 ],
-			"obj-32::obj-30::obj-3" : [ "AUX 1[36]", "AUX 1", 0 ],
-			"obj-46::obj-15::obj-109" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-34::obj-51::obj-18" : [ "live.dial[14]", "Pan", 0 ],
+			"obj-20::obj-8::obj-133" : [ "GAIN[38]", "GAIN", 0 ],
+			"obj-20::obj-93::obj-3" : [ "textbutton[5]", "textbutton", 0 ],
+			"obj-39::obj-30::obj-4" : [ "AUX 1[25]", "AUX 4", 0 ],
+			"obj-117" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
+			"obj-37::obj-8::obj-44" : [ "toggle[32]", "toggle[8]", 0 ],
+			"obj-32::obj-30::obj-47" : [ "live.gain~[10]", "live.gain~[1]", 0 ],
+			"obj-39::obj-8::obj-70" : [ "FREQUENCY[8]", "FREQ", 0 ],
+			"obj-38::obj-8::obj-40" : [ "toggle[15]", "toggle[15]", 0 ],
+			"obj-34::obj-8::obj-119" : [ "GAIN[22]", "GAIN", 0 ],
+			"obj-32::obj-8::obj-122" : [ "Q[22]", "Q", 0 ],
 			"obj-20::obj-8::obj-109" : [ "FREQUENCY[24]", "FREQ", 0 ],
+			"obj-38::obj-8::obj-9" : [ "toggle[16]", "toggle[16]", 0 ],
+			"obj-37::obj-8::obj-105" : [ "GAIN[14]", "GAIN", 0 ],
+			"obj-32::obj-93::obj-3" : [ "textbutton[4]", "textbutton", 0 ],
+			"obj-39::obj-8::obj-82" : [ "GAIN[5]", "GAIN", 0 ],
+			"obj-105::obj-11" : [ "toggle[7]", "toggle[1]", 0 ],
+			"obj-38::obj-8::obj-36" : [ "toggle[14]", "toggle[14]", 0 ],
+			"obj-34::obj-30::obj-50" : [ "live.gain~[7]", "live.gain~[1]", 0 ],
+			"obj-32::obj-8::obj-82" : [ "GAIN[26]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-69" : [ "Q[24]", "Q", 0 ],
+			"obj-38::obj-30::obj-47" : [ "live.gain~[2]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-133" : [ "GAIN[15]", "GAIN", 0 ],
+			"obj-34::obj-8::obj-9" : [ "toggle[47]", "toggle[16]", 0 ],
+			"obj-39::obj-8::obj-40" : [ "toggle[24]", "toggle[15]", 0 ],
+			"obj-46::obj-15::obj-102" : [ "toggle", "toggle", 0 ],
+			"obj-109" : [ "toggle[4]", "toggle[4]", 0 ],
+			"obj-38::obj-8::obj-31" : [ "toggle[13]", "toggle[13]", 0 ],
+			"obj-38::obj-8::obj-119" : [ "GAIN[12]", "GAIN", 0 ],
+			"obj-34::obj-93::obj-3" : [ "textbutton[3]", "textbutton", 0 ],
+			"obj-32::obj-8::obj-9" : [ "toggle[65]", "toggle[16]", 0 ],
+			"obj-20::obj-8::obj-36" : [ "toggle[78]", "toggle[14]", 0 ],
+			"obj-37::obj-30::obj-4" : [ "AUX 1[1]", "AUX 4", 0 ],
+			"obj-34::obj-8::obj-20" : [ "toggle[46]", "toggle[18]", 0 ],
+			"obj-39::obj-8::obj-137" : [ "FREQUENCY[7]", "FREQ", 0 ],
+			"obj-46::obj-15::obj-116" : [ "toggle[3]", "toggle[3]", 0 ],
+			"obj-38::obj-8::obj-122" : [ "Q[10]", "Q", 0 ],
+			"obj-38::obj-8::obj-11" : [ "toggle[12]", "toggle[12]", 0 ],
+			"obj-37::obj-8::obj-70" : [ "FREQUENCY[10]", "FREQ", 0 ],
+			"obj-32::obj-8::obj-20" : [ "toggle[61]", "toggle[18]", 0 ],
+			"obj-20::obj-8::obj-53" : [ "toggle[75]", "toggle[11]", 0 ],
+			"obj-46::obj-15::obj-109" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-46::obj-259" : [ "gain~", "gain~", 0 ],
+			"obj-37::obj-60::obj-7" : [ "GAIN[18]", "GAIN", 0 ],
+			"obj-34::obj-8::obj-11" : [ "toggle[53]", "toggle[12]", 0 ],
+			"obj-39::obj-60::obj-2" : [ "live.gain~[37]", "live.gain~", 0 ],
+			"obj-38::obj-8::obj-29" : [ "toggle[19]", "toggle[19]", 0 ],
+			"obj-38::obj-8::obj-123" : [ "FREQUENCY[5]", "FREQ", 0 ],
+			"obj-37::obj-8::obj-137" : [ "FREQUENCY[9]", "FREQ", 0 ],
+			"obj-32::obj-8::obj-11" : [ "toggle[56]", "toggle[12]", 0 ],
+			"obj-20::obj-30::obj-51" : [ "live.gain~[47]", "live.gain~[1]", 0 ],
+			"obj-38::obj-30::obj-4" : [ "AUX 1[28]", "AUX 4", 0 ],
+			"obj-34::obj-8::obj-44" : [ "toggle[51]", "toggle[8]", 0 ],
+			"obj-20::obj-8::obj-31" : [ "toggle[71]", "toggle[13]", 0 ],
+			"obj-20::obj-30::obj-49" : [ "live.gain~[49]", "live.gain~[1]", 0 ],
+			"obj-46::obj-15::obj-14" : [ "live.gain~[54]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-108" : [ "Q[11]", "Q", 0 ],
+			"obj-32::obj-30::obj-49" : [ "live.gain~[11]", "live.gain~[1]", 0 ],
+			"obj-39::obj-8::obj-29" : [ "toggle[28]", "toggle[19]", 0 ],
+			"obj-39::obj-93::obj-3" : [ "textbutton", "textbutton", 0 ],
+			"obj-46::obj-15::obj-5" : [ "AUX 1[45]", "AUX 2", 0 ],
+			"obj-34::obj-8::obj-105" : [ "GAIN[19]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-40" : [ "toggle[68]", "toggle[15]", 0 ],
+			"obj-20::obj-60::obj-7" : [ "GAIN[40]", "GAIN", 0 ],
+			"obj-37::obj-8::obj-29" : [ "toggle[37]", "toggle[19]", 0 ],
+			"obj-32::obj-30::obj-51" : [ "live.gain~[9]", "live.gain~[1]", 0 ],
+			"obj-39::obj-8::obj-18" : [ "toggle[30]", "toggle[17]", 0 ],
+			"obj-39::obj-30::obj-50" : [ "live.gain~[27]", "live.gain~[1]", 0 ],
+			"obj-34::obj-30::obj-4" : [ "AUX 1[32]", "AUX 4", 0 ],
+			"obj-32::obj-8::obj-136" : [ "Q[20]", "Q", 0 ],
+			"obj-20::obj-8::obj-50" : [ "toggle[76]", "toggle[10]", 0 ],
+			"obj-39::obj-30::obj-1" : [ "AUX 1[24]", "AUX 3", 0 ],
+			"obj-46::obj-15::obj-12" : [ "live.gain~[55]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-31" : [ "toggle[34]", "toggle[13]", 0 ],
+			"obj-32::obj-39" : [ "live.gain~[14]", "live.gain~[31]", 0 ],
+			"obj-39::obj-8::obj-69" : [ "Q[3]", "Q", 0 ],
+			"obj-7::obj-19" : [ "textbutton[6]", "textbutton[6]", 0 ],
+			"obj-34::obj-30::obj-2" : [ "AUX 1[33]", "AUX 2", 0 ],
+			"obj-32::obj-8::obj-119" : [ "GAIN[27]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-122" : [ "Q[23]", "Q", 0 ],
+			"obj-39::obj-30::obj-3" : [ "AUX 1[27]", "AUX 1", 0 ],
+			"obj-46::obj-15::obj-50" : [ "live.gain~[56]", "live.gain~[1]", 0 ],
+			"obj-37::obj-30::obj-3" : [ "AUX 1[3]", "AUX 1", 0 ],
+			"obj-34::obj-8::obj-70" : [ "FREQUENCY[15]", "FREQ", 0 ],
+			"obj-39::obj-8::obj-109" : [ "FREQUENCY[6]", "FREQ", 0 ],
+			"obj-39::obj-51::obj-18" : [ "live.dial[13]", "Pan", 0 ],
+			"obj-34::obj-39" : [ "live.gain~[46]", "live.gain~[31]", 0 ],
+			"obj-32::obj-8::obj-70" : [ "FREQUENCY[18]", "FREQ", 0 ],
+			"obj-20::obj-8::obj-82" : [ "GAIN[37]", "GAIN", 0 ],
+			"obj-46::obj-15::obj-7" : [ "AUX 1[47]", "AUX 4", 0 ],
+			"obj-37::obj-30::obj-1" : [ "AUX 1[4]", "AUX 3", 0 ],
+			"obj-34::obj-8::obj-137" : [ "FREQUENCY[14]", "FREQ", 0 ],
+			"obj-39::obj-8::obj-105" : [ "GAIN[7]", "GAIN", 0 ],
+			"obj-37::obj-8::obj-109" : [ "FREQUENCY[12]", "FREQ", 0 ],
+			"obj-32::obj-8::obj-137" : [ "FREQUENCY[17]", "FREQ", 0 ],
+			"obj-20::obj-30::obj-50" : [ "live.gain~[50]", "live.gain~[1]", 0 ],
+			"obj-105::obj-47" : [ "toggle[6]", "toggle[1]", 0 ],
+			"obj-38::obj-30::obj-2" : [ "AUX 1[29]", "AUX 2", 0 ],
+			"obj-34::obj-8::obj-108" : [ "Q[16]", "Q", 0 ],
+			"obj-20::obj-30::obj-2" : [ "AUX 1[43]", "AUX 2", 0 ],
+			"obj-81::obj-15" : [ "live.gain~[53]", "live.gain~", 0 ],
+			"obj-37::obj-8::obj-69" : [ "Q[13]", "Q", 0 ],
+			"obj-32::obj-8::obj-108" : [ "Q[19]", "Q", 0 ],
+			"obj-39::obj-8::obj-133" : [ "GAIN[8]", "GAIN", 0 ],
+			"obj-34::obj-8::obj-29" : [ "toggle[54]", "toggle[19]", 0 ],
+			"obj-20::obj-8::obj-47" : [ "toggle[73]", "toggle[9]", 0 ],
+			"obj-38::obj-8::obj-18" : [ "toggle[17]", "toggle[17]", 0 ],
+			"obj-38::obj-8::obj-44" : [ "toggle[8]", "toggle[8]", 0 ],
+			"obj-38::obj-30::obj-50" : [ "live.gain~[3]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-36" : [ "toggle[36]", "toggle[14]", 0 ],
+			"obj-32::obj-30::obj-50" : [ "live.gain~[12]", "live.gain~[1]", 0 ],
+			"obj-39::obj-8::obj-36" : [ "toggle[25]", "toggle[14]", 0 ],
+			"obj-105::obj-12" : [ "toggle[5]", "toggle", 0 ],
+			"obj-7::obj-22" : [ "filtergraph~", "filtergraph~", 0 ],
+			"obj-34::obj-30::obj-3" : [ "AUX 1[34]", "AUX 1", 0 ],
+			"obj-32::obj-8::obj-44" : [ "toggle[57]", "toggle[8]", 0 ],
+			"obj-20::obj-8::obj-123" : [ "FREQUENCY[21]", "FREQ", 0 ],
+			"obj-38::obj-8::obj-47" : [ "toggle[9]", "toggle[9]", 0 ],
+			"obj-37::obj-8::obj-53" : [ "toggle[40]", "toggle[11]", 0 ],
+			"obj-32::obj-60::obj-2" : [ "live.gain~[13]", "live.gain~", 0 ],
+			"obj-39::obj-8::obj-11" : [ "toggle[27]", "toggle[12]", 0 ],
+			"obj-3" : [ "toggle[80]", "toggle[80]", 0 ],
+			"obj-34::obj-30::obj-1" : [ "AUX 1[35]", "AUX 3", 0 ],
+			"obj-32::obj-8::obj-105" : [ "GAIN[24]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-18" : [ "toggle[74]", "toggle[17]", 0 ],
+			"obj-38::obj-8::obj-50" : [ "toggle[10]", "toggle[10]", 0 ],
+			"obj-37::obj-30::obj-51" : [ "live.gain~[40]", "live.gain~[1]", 0 ],
+			"obj-34::obj-8::obj-133" : [ "GAIN[20]", "GAIN", 0 ],
+			"obj-39::obj-8::obj-44" : [ "toggle[20]", "toggle[8]", 0 ],
+			"obj-39::obj-30::obj-47" : [ "live.gain~[29]", "live.gain~[1]", 0 ],
+			"obj-34::obj-60::obj-7" : [ "GAIN[23]", "GAIN", 0 ],
+			"obj-32::obj-8::obj-133" : [ "GAIN[25]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-136" : [ "Q[25]", "Q", 0 ],
+			"obj-37::obj-30::obj-47" : [ "live.gain~[41]", "live.gain~[1]", 0 ],
+			"obj-34::obj-8::obj-109" : [ "FREQUENCY[13]", "FREQ", 0 ],
+			"obj-39::obj-8::obj-31" : [ "toggle[26]", "toggle[13]", 0 ],
+			"obj-7::obj-48" : [ "filtergraph~[1]", "filtergraph~[1]", 0 ],
+			"obj-38::obj-51::obj-18" : [ "live.dial[1]", "Pan", 0 ],
+			"obj-37::obj-8::obj-40" : [ "toggle[33]", "toggle[15]", 0 ],
+			"obj-32::obj-8::obj-109" : [ "FREQUENCY[20]", "FREQ", 0 ],
+			"obj-20::obj-8::obj-119" : [ "GAIN[36]", "GAIN", 0 ],
+			"obj-37::obj-60::obj-2" : [ "live.gain~[42]", "live.gain~", 0 ],
+			"obj-34::obj-8::obj-69" : [ "Q[18]", "Q", 0 ],
+			"obj-39::obj-39" : [ "live.gain~[36]", "live.gain~[31]", 0 ],
+			"obj-37::obj-8::obj-50" : [ "toggle[38]", "toggle[10]", 0 ],
+			"obj-32::obj-8::obj-69" : [ "Q[21]", "Q", 0 ],
+			"obj-38::obj-8::obj-133" : [ "GAIN[10]", "GAIN", 0 ],
+			"obj-38::obj-93::obj-3" : [ "textbutton[1]", "textbutton", 0 ],
+			"obj-38::obj-60::obj-7" : [ "GAIN[13]", "GAIN", 0 ],
+			"obj-34::obj-8::obj-36" : [ "toggle[48]", "toggle[14]", 0 ],
+			"obj-20::obj-8::obj-9" : [ "toggle[77]", "toggle[16]", 0 ],
+			"obj-20::obj-30::obj-4" : [ "AUX 1[42]", "AUX 4", 0 ],
+			"obj-38::obj-30::obj-49" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-122" : [ "Q[14]", "Q", 0 ],
+			"obj-37::obj-51::obj-18" : [ "live.dial[2]", "Pan", 0 ],
+			"obj-32::obj-30::obj-4" : [ "AUX 1[38]", "AUX 4", 0 ],
+			"obj-39::obj-8::obj-136" : [ "Q[8]", "Q", 0 ],
+			"obj-39::obj-30::obj-51" : [ "live.gain~[28]", "live.gain~[1]", 0 ],
+			"obj-38::obj-8::obj-136" : [ "Q[9]", "Q", 0 ],
+			"obj-38::obj-60::obj-2" : [ "live.gain~[30]", "live.gain~", 0 ],
+			"obj-34::obj-8::obj-53" : [ "toggle[55]", "toggle[11]", 0 ],
+			"obj-20::obj-8::obj-20" : [ "toggle[69]", "toggle[18]", 0 ],
+			"obj-20::obj-39" : [ "live.gain~[52]", "live.gain~[31]", 0 ],
+			"obj-39::obj-30::obj-2" : [ "AUX 1[26]", "AUX 2", 0 ],
+			"obj-46::obj-15::obj-13" : [ "live.gain~[57]", "live.gain~[1]", 0 ],
+			"obj-37::obj-8::obj-82" : [ "GAIN[16]", "GAIN", 0 ],
+			"obj-32::obj-30::obj-2" : [ "AUX 1[39]", "AUX 2", 0 ],
+			"obj-32::obj-51::obj-18" : [ "live.dial[3]", "Pan", 0 ],
+			"obj-39::obj-8::obj-50" : [ "toggle[22]", "toggle[10]", 0 ],
+			"obj-46::obj-15::obj-4" : [ "AUX 1[44]", "AUX 1", 0 ],
+			"obj-38::obj-8::obj-137" : [ "FREQUENCY[2]", "FREQ", 0 ],
+			"obj-34::obj-30::obj-47" : [ "live.gain~[44]", "live.gain~[1]", 0 ],
+			"obj-32::obj-8::obj-29" : [ "toggle[58]", "toggle[19]", 0 ],
+			"obj-20::obj-8::obj-11" : [ "toggle[79]", "toggle[12]", 0 ],
+			"obj-37::obj-8::obj-9" : [ "toggle[43]", "toggle[16]", 0 ],
+			"obj-34::obj-8::obj-31" : [ "toggle[50]", "toggle[13]", 0 ],
+			"obj-39::obj-8::obj-122" : [ "Q[4]", "Q", 0 ],
+			"obj-34::obj-51::obj-18" : [ "live.dial[14]", "Pan", 0 ],
+			"obj-32::obj-8::obj-31" : [ "toggle[60]", "toggle[13]", 0 ],
+			"obj-20::obj-8::obj-44" : [ "toggle[70]", "toggle[8]", 0 ],
+			"obj-37::obj-30::obj-49" : [ "live.gain~[5]", "live.gain~[1]", 0 ],
+			"obj-34::obj-8::obj-40" : [ "toggle[44]", "toggle[15]", 0 ],
+			"obj-39::obj-8::obj-47" : [ "toggle[21]", "toggle[9]", 0 ],
+			"obj-37::obj-8::obj-47" : [ "toggle[35]", "toggle[9]", 0 ],
+			"obj-32::obj-8::obj-40" : [ "toggle[66]", "toggle[15]", 0 ],
+			"obj-20::obj-8::obj-105" : [ "GAIN[39]", "GAIN", 0 ],
+			"obj-37::obj-93::obj-3" : [ "textbutton[2]", "textbutton", 0 ],
+			"obj-34::obj-8::obj-50" : [ "toggle[49]", "toggle[10]", 0 ],
+			"obj-39::obj-60::obj-7" : [ "GAIN[35]", "GAIN", 0 ],
+			"obj-37::obj-8::obj-123" : [ "FREQUENCY[11]", "FREQ", 0 ],
+			"obj-32::obj-8::obj-50" : [ "toggle[62]", "toggle[10]", 0 ],
+			"obj-20::obj-30::obj-1" : [ "AUX 1[41]", "AUX 3", 0 ],
+			"obj-46::obj-15::obj-105" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-46::obj-15::obj-6" : [ "AUX 1[46]", "AUX 3", 0 ],
+			"obj-38::obj-30::obj-3" : [ "AUX 1[30]", "AUX 1", 0 ],
+			"obj-34::obj-8::obj-122" : [ "Q[15]", "Q", 0 ],
+			"obj-20::obj-30::obj-3" : [ "AUX 1[40]", "AUX 1", 0 ],
+			"obj-38::obj-8::obj-105" : [ "GAIN[9]", "GAIN", 0 ],
+			"obj-38::obj-8::obj-20" : [ "toggle[18]", "toggle[18]", 0 ],
+			"obj-37::obj-8::obj-18" : [ "toggle[42]", "toggle[17]", 0 ],
+			"obj-32::obj-30::obj-3" : [ "AUX 1[36]", "AUX 1", 0 ],
+			"obj-39::obj-8::obj-108" : [ "Q[7]", "Q", 0 ],
+			"obj-34::obj-8::obj-82" : [ "GAIN[21]", "GAIN", 0 ],
+			"obj-20::obj-8::obj-70" : [ "FREQUENCY[22]", "FREQ", 0 ],
+			"obj-20::obj-60::obj-2" : [ "live.gain~[51]", "live.gain~", 0 ],
+			"obj-38::obj-8::obj-108" : [ "Q[5]", "Q", 0 ],
+			"obj-37::obj-8::obj-136" : [ "Q[12]", "Q", 0 ],
+			"obj-32::obj-30::obj-1" : [ "AUX 1[37]", "AUX 3", 0 ],
+			"obj-39::obj-8::obj-123" : [ "FREQUENCY[4]", "FREQ", 0 ],
+			"obj-34::obj-30::obj-49" : [ "live.gain~[6]", "live.gain~[1]", 0 ],
+			"obj-32::obj-8::obj-36" : [ "toggle[67]", "toggle[14]", 0 ],
+			"obj-20::obj-8::obj-137" : [ "FREQUENCY[23]", "FREQ", 0 ],
+			"obj-38::obj-8::obj-109" : [ "FREQUENCY[1]", "FREQ", 0 ],
+			"obj-37::obj-8::obj-119" : [ "GAIN[17]", "GAIN", 0 ],
+			"obj-32::obj-60::obj-7" : [ "GAIN[28]", "GAIN", 0 ],
+			"obj-39::obj-8::obj-119" : [ "GAIN[6]", "GAIN", 0 ],
+			"obj-39::obj-30::obj-49" : [ "live.gain~[26]", "live.gain~[1]", 0 ],
+			"obj-81::obj-19" : [ "textbutton[7]", "textbutton[6]", 0 ],
+			"obj-34::obj-30::obj-51" : [ "live.gain~[8]", "live.gain~[1]", 0 ],
+			"obj-32::obj-8::obj-53" : [ "toggle[64]", "toggle[11]", 0 ],
+			"obj-20::obj-8::obj-108" : [ "Q[26]", "Q", 0 ],
+			"obj-20::obj-51::obj-18" : [ "live.dial[4]", "Pan", 0 ],
+			"obj-38::obj-8::obj-82" : [ "GAIN[11]", "GAIN", 0 ],
+			"obj-37::obj-30::obj-2" : [ "AUX 1[2]", "AUX 2", 0 ],
+			"obj-37::obj-39" : [ "live.gain~[43]", "live.gain~[31]", 0 ],
+			"obj-34::obj-8::obj-47" : [ "toggle[52]", "toggle[9]", 0 ],
+			"obj-39::obj-8::obj-20" : [ "toggle[29]", "toggle[18]", 0 ],
+			"obj-38::obj-39" : [ "live.gain~[38]", "live.gain~[31]", 0 ],
+			"obj-34::obj-60::obj-2" : [ "live.gain~[45]", "live.gain~", 0 ],
+			"obj-32::obj-8::obj-47" : [ "toggle[59]", "toggle[9]", 0 ],
+			"obj-20::obj-8::obj-29" : [ "toggle[72]", "toggle[19]", 0 ],
+			"obj-1::obj-6" : [ "gswitch2", "gswitch2", 0 ],
+			"obj-38::obj-8::obj-69" : [ "Q[6]", "Q", 0 ],
+			"obj-37::obj-30::obj-50" : [ "live.gain~[39]", "live.gain~[1]", 0 ],
+			"obj-34::obj-8::obj-123" : [ "FREQUENCY[16]", "FREQ", 0 ],
+			"obj-39::obj-8::obj-9" : [ "toggle[31]", "toggle[16]", 0 ],
+			"obj-37::obj-8::obj-20" : [ "toggle[39]", "toggle[18]", 0 ],
+			"obj-32::obj-8::obj-123" : [ "FREQUENCY[19]", "FREQ", 0 ],
+			"obj-20::obj-30::obj-47" : [ "live.gain~[48]", "live.gain~[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-46::obj-15::obj-12" : 				{
-					"parameter_longname" : "live.gain~[55]"
-				}
-,
-				"obj-38::obj-8::obj-136" : 				{
-					"parameter_longname" : "Q[9]"
-				}
-,
-				"obj-32::obj-30::obj-1" : 				{
-					"parameter_longname" : "AUX 1[37]"
-				}
-,
-				"obj-37::obj-8::obj-70" : 				{
-					"parameter_longname" : "FREQUENCY[10]"
-				}
-,
-				"obj-20::obj-30::obj-47" : 				{
-					"parameter_longname" : "live.gain~[48]"
-				}
-,
-				"obj-46::obj-15::obj-50" : 				{
-					"parameter_longname" : "live.gain~[56]"
-				}
-,
 				"obj-38::obj-8::obj-70" : 				{
 					"parameter_longname" : "FREQUENCY[3]"
 				}
 ,
-				"obj-32::obj-60::obj-7" : 				{
-					"parameter_longname" : "GAIN[28]"
+				"obj-38::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[31]"
 				}
 ,
-				"obj-37::obj-8::obj-108" : 				{
-					"parameter_longname" : "Q[11]"
+				"obj-38::obj-30::obj-51" : 				{
+					"parameter_longname" : "live.gain~[4]"
 				}
 ,
-				"obj-46::obj-15::obj-7" : 				{
-					"parameter_longname" : "AUX 1[47]"
+				"obj-38::obj-8::obj-53" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
 				}
 ,
-				"obj-38::obj-30::obj-3" : 				{
-					"parameter_longname" : "AUX 1[30]"
-				}
-,
-				"obj-34::obj-8::obj-108" : 				{
-					"parameter_longname" : "Q[16]"
-				}
-,
-				"obj-37::obj-8::obj-119" : 				{
-					"parameter_longname" : "GAIN[17]"
-				}
-,
-				"obj-32::obj-8::obj-123" : 				{
-					"parameter_longname" : "FREQUENCY[19]"
-				}
-,
-				"obj-38::obj-39" : 				{
-					"parameter_longname" : "live.gain~[38]"
-				}
-,
-				"obj-34::obj-8::obj-119" : 				{
-					"parameter_longname" : "GAIN[22]"
-				}
-,
-				"obj-37::obj-30::obj-49" : 				{
-					"parameter_longname" : "live.gain~[5]"
-				}
-,
-				"obj-32::obj-8::obj-136" : 				{
-					"parameter_longname" : "Q[20]"
-				}
-,
-				"obj-34::obj-30::obj-2" : 				{
-					"parameter_longname" : "AUX 1[33]"
-				}
-,
-				"obj-20::obj-8::obj-122" : 				{
-					"parameter_longname" : "Q[23]"
-				}
-,
-				"obj-38::obj-30::obj-50" : 				{
-					"parameter_longname" : "live.gain~[3]"
-				}
-,
-				"obj-32::obj-8::obj-70" : 				{
-					"parameter_longname" : "FREQUENCY[18]"
-				}
-,
-				"obj-34::obj-30::obj-50" : 				{
-					"parameter_longname" : "live.gain~[7]"
+				"obj-34::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[17]"
 				}
 ,
 				"obj-20::obj-8::obj-133" : 				{
 					"parameter_longname" : "GAIN[38]"
 				}
 ,
-				"obj-38::obj-8::obj-108" : 				{
-					"parameter_longname" : "Q[5]"
+				"obj-39::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[25]"
 				}
 ,
 				"obj-32::obj-30::obj-47" : 				{
 					"parameter_longname" : "live.gain~[10]"
 				}
 ,
-				"obj-34::obj-60::obj-2" : 				{
-					"parameter_longname" : "live.gain~[45]"
+				"obj-39::obj-8::obj-70" : 				{
+					"parameter_longname" : "FREQUENCY[8]"
 				}
 ,
-				"obj-20::obj-30::obj-49" : 				{
-					"parameter_longname" : "live.gain~[49]"
+				"obj-38::obj-8::obj-40" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-34::obj-8::obj-119" : 				{
+					"parameter_longname" : "GAIN[22]"
+				}
+,
+				"obj-32::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[22]"
+				}
+,
+				"obj-20::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[24]"
+				}
+,
+				"obj-38::obj-8::obj-9" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-37::obj-8::obj-105" : 				{
+					"parameter_longname" : "GAIN[14]"
+				}
+,
+				"obj-39::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[5]"
+				}
+,
+				"obj-38::obj-8::obj-36" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-34::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[7]"
+				}
+,
+				"obj-32::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[26]"
+				}
+,
+				"obj-20::obj-8::obj-69" : 				{
+					"parameter_longname" : "Q[24]"
+				}
+,
+				"obj-38::obj-30::obj-47" : 				{
+					"parameter_longname" : "live.gain~[2]"
+				}
+,
+				"obj-37::obj-8::obj-133" : 				{
+					"parameter_longname" : "GAIN[15]"
+				}
+,
+				"obj-38::obj-8::obj-31" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
 				}
 ,
 				"obj-38::obj-8::obj-119" : 				{
 					"parameter_longname" : "GAIN[12]"
+				}
+,
+				"obj-37::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[1]"
+				}
+,
+				"obj-39::obj-8::obj-137" : 				{
+					"parameter_longname" : "FREQUENCY[7]"
+				}
+,
+				"obj-38::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[10]"
+				}
+,
+				"obj-38::obj-8::obj-11" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-37::obj-8::obj-70" : 				{
+					"parameter_longname" : "FREQUENCY[10]"
+				}
+,
+				"obj-37::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[18]"
+				}
+,
+				"obj-39::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[37]"
+				}
+,
+				"obj-38::obj-8::obj-29" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-38::obj-8::obj-123" : 				{
+					"parameter_longname" : "FREQUENCY[5]"
 				}
 ,
 				"obj-37::obj-8::obj-137" : 				{
@@ -2544,256 +2697,473 @@
 					"parameter_longname" : "live.gain~[47]"
 				}
 ,
-				"obj-38::obj-30::obj-1" : 				{
-					"parameter_longname" : "AUX 1[31]"
+				"obj-38::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[28]"
 				}
 ,
-				"obj-34::obj-8::obj-137" : 				{
-					"parameter_longname" : "FREQUENCY[14]"
+				"obj-20::obj-30::obj-49" : 				{
+					"parameter_longname" : "live.gain~[49]"
 				}
 ,
-				"obj-37::obj-8::obj-82" : 				{
-					"parameter_longname" : "GAIN[16]"
+				"obj-46::obj-15::obj-14" : 				{
+					"parameter_longname" : "live.gain~[54]"
 				}
 ,
-				"obj-20::obj-60::obj-2" : 				{
-					"parameter_longname" : "live.gain~[51]"
-				}
-,
-				"obj-38::obj-60::obj-7" : 				{
-					"parameter_longname" : "GAIN[13]"
-				}
-,
-				"obj-34::obj-8::obj-82" : 				{
-					"parameter_longname" : "GAIN[21]"
-				}
-,
-				"obj-20::obj-51::obj-18" : 				{
-					"parameter_longname" : "live.dial[4]"
-				}
-,
-				"obj-37::obj-30::obj-2" : 				{
-					"parameter_longname" : "AUX 1[2]"
-				}
-,
-				"obj-32::obj-8::obj-108" : 				{
-					"parameter_longname" : "Q[19]"
-				}
-,
-				"obj-34::obj-8::obj-109" : 				{
-					"parameter_longname" : "FREQUENCY[13]"
-				}
-,
-				"obj-20::obj-8::obj-69" : 				{
-					"parameter_longname" : "Q[24]"
-				}
-,
-				"obj-38::obj-30::obj-49" : 				{
-					"parameter_longname" : "live.gain~[1]"
-				}
-,
-				"obj-37::obj-30::obj-50" : 				{
-					"parameter_longname" : "live.gain~[39]"
-				}
-,
-				"obj-32::obj-8::obj-119" : 				{
-					"parameter_longname" : "GAIN[27]"
-				}
-,
-				"obj-34::obj-30::obj-4" : 				{
-					"parameter_longname" : "AUX 1[32]"
-				}
-,
-				"obj-20::obj-8::obj-105" : 				{
-					"parameter_longname" : "GAIN[39]"
-				}
-,
-				"obj-46::obj-15::obj-13" : 				{
-					"parameter_longname" : "live.gain~[57]"
-				}
-,
-				"obj-38::obj-8::obj-137" : 				{
-					"parameter_longname" : "FREQUENCY[2]"
+				"obj-37::obj-8::obj-108" : 				{
+					"parameter_longname" : "Q[11]"
 				}
 ,
 				"obj-32::obj-30::obj-49" : 				{
 					"parameter_longname" : "live.gain~[11]"
 				}
 ,
-				"obj-46::obj-15::obj-4" : 				{
-					"parameter_longname" : "AUX 1[44]"
-				}
-,
-				"obj-38::obj-51::obj-18" : 				{
-					"parameter_longname" : "live.dial[1]"
-				}
-,
-				"obj-20::obj-8::obj-123" : 				{
-					"parameter_longname" : "FREQUENCY[21]"
-				}
-,
-				"obj-38::obj-8::obj-82" : 				{
-					"parameter_longname" : "GAIN[11]"
-				}
-,
-				"obj-32::obj-30::obj-51" : 				{
-					"parameter_longname" : "live.gain~[9]"
-				}
-,
-				"obj-37::obj-8::obj-109" : 				{
-					"parameter_longname" : "FREQUENCY[12]"
-				}
-,
-				"obj-37::obj-51::obj-18" : 				{
-					"parameter_longname" : "live.dial[2]"
-				}
-,
-				"obj-20::obj-30::obj-4" : 				{
-					"parameter_longname" : "AUX 1[42]"
-				}
-,
-				"obj-38::obj-8::obj-109" : 				{
-					"parameter_longname" : "FREQUENCY[1]"
-				}
-,
-				"obj-32::obj-39" : 				{
-					"parameter_longname" : "live.gain~[14]"
-				}
-,
-				"obj-37::obj-8::obj-122" : 				{
-					"parameter_longname" : "Q[14]"
-				}
-,
-				"obj-32::obj-51::obj-18" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
-				"obj-38::obj-30::obj-4" : 				{
-					"parameter_longname" : "AUX 1[28]"
-				}
-,
-				"obj-34::obj-8::obj-122" : 				{
-					"parameter_longname" : "Q[15]"
-				}
-,
-				"obj-37::obj-8::obj-133" : 				{
-					"parameter_longname" : "GAIN[15]"
-				}
-,
-				"obj-32::obj-8::obj-137" : 				{
-					"parameter_longname" : "FREQUENCY[17]"
-				}
-,
-				"obj-46::obj-15::obj-6" : 				{
-					"parameter_longname" : "AUX 1[46]"
-				}
-,
-				"obj-34::obj-8::obj-133" : 				{
-					"parameter_longname" : "GAIN[20]"
-				}
-,
-				"obj-37::obj-30::obj-4" : 				{
-					"parameter_longname" : "AUX 1[1]"
-				}
-,
-				"obj-32::obj-8::obj-82" : 				{
-					"parameter_longname" : "GAIN[26]"
-				}
-,
-				"obj-34::obj-30::obj-3" : 				{
-					"parameter_longname" : "AUX 1[34]"
-				}
-,
-				"obj-20::obj-8::obj-136" : 				{
-					"parameter_longname" : "Q[25]"
-				}
-,
-				"obj-37::obj-60::obj-7" : 				{
-					"parameter_longname" : "GAIN[18]"
-				}
-,
-				"obj-32::obj-8::obj-109" : 				{
-					"parameter_longname" : "FREQUENCY[20]"
-				}
-,
-				"obj-34::obj-30::obj-1" : 				{
-					"parameter_longname" : "AUX 1[35]"
-				}
-,
-				"obj-20::obj-8::obj-70" : 				{
-					"parameter_longname" : "FREQUENCY[22]"
-				}
-,
-				"obj-38::obj-8::obj-122" : 				{
-					"parameter_longname" : "Q[10]"
-				}
-,
-				"obj-32::obj-30::obj-50" : 				{
-					"parameter_longname" : "live.gain~[12]"
-				}
-,
-				"obj-34::obj-39" : 				{
-					"parameter_longname" : "live.gain~[46]"
-				}
-,
-				"obj-20::obj-30::obj-3" : 				{
-					"parameter_longname" : "AUX 1[40]"
-				}
-,
-				"obj-38::obj-8::obj-133" : 				{
-					"parameter_longname" : "GAIN[10]"
-				}
-,
-				"obj-32::obj-60::obj-2" : 				{
-					"parameter_longname" : "live.gain~[13]"
-				}
-,
-				"obj-37::obj-8::obj-69" : 				{
-					"parameter_longname" : "Q[13]"
-				}
-,
-				"obj-20::obj-30::obj-1" : 				{
-					"parameter_longname" : "AUX 1[41]"
-				}
-,
-				"obj-38::obj-30::obj-2" : 				{
-					"parameter_longname" : "AUX 1[29]"
-				}
-,
-				"obj-34::obj-8::obj-69" : 				{
-					"parameter_longname" : "Q[18]"
-				}
-,
-				"obj-37::obj-8::obj-105" : 				{
-					"parameter_longname" : "GAIN[14]"
-				}
-,
-				"obj-20::obj-39" : 				{
-					"parameter_longname" : "live.gain~[52]"
-				}
-,
-				"obj-38::obj-60::obj-2" : 				{
-					"parameter_longname" : "live.gain~[30]"
+				"obj-46::obj-15::obj-5" : 				{
+					"parameter_longname" : "AUX 1[45]"
 				}
 ,
 				"obj-34::obj-8::obj-105" : 				{
 					"parameter_longname" : "GAIN[19]"
 				}
 ,
-				"obj-81::obj-15" : 				{
-					"parameter_longname" : "live.gain~[53]"
+				"obj-20::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[40]"
 				}
 ,
-				"obj-38::obj-30::obj-51" : 				{
-					"parameter_longname" : "live.gain~[4]"
+				"obj-32::obj-30::obj-51" : 				{
+					"parameter_longname" : "live.gain~[9]"
+				}
+,
+				"obj-39::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[27]"
+				}
+,
+				"obj-34::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[32]"
+				}
+,
+				"obj-32::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[20]"
+				}
+,
+				"obj-39::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[24]"
+				}
+,
+				"obj-46::obj-15::obj-12" : 				{
+					"parameter_longname" : "live.gain~[55]"
+				}
+,
+				"obj-32::obj-39" : 				{
+					"parameter_longname" : "live.gain~[14]"
+				}
+,
+				"obj-39::obj-8::obj-69" : 				{
+					"parameter_longname" : "Q[3]"
+				}
+,
+				"obj-34::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[33]"
+				}
+,
+				"obj-32::obj-8::obj-119" : 				{
+					"parameter_longname" : "GAIN[27]"
+				}
+,
+				"obj-20::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[23]"
+				}
+,
+				"obj-39::obj-30::obj-3" : 				{
+					"parameter_longname" : "AUX 1[27]"
+				}
+,
+				"obj-46::obj-15::obj-50" : 				{
+					"parameter_longname" : "live.gain~[56]"
 				}
 ,
 				"obj-37::obj-30::obj-3" : 				{
 					"parameter_longname" : "AUX 1[3]"
 				}
 ,
-				"obj-32::obj-8::obj-122" : 				{
-					"parameter_longname" : "Q[22]"
+				"obj-34::obj-8::obj-70" : 				{
+					"parameter_longname" : "FREQUENCY[15]"
+				}
+,
+				"obj-39::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[6]"
+				}
+,
+				"obj-34::obj-39" : 				{
+					"parameter_longname" : "live.gain~[46]"
+				}
+,
+				"obj-32::obj-8::obj-70" : 				{
+					"parameter_longname" : "FREQUENCY[18]"
+				}
+,
+				"obj-20::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[37]"
+				}
+,
+				"obj-46::obj-15::obj-7" : 				{
+					"parameter_longname" : "AUX 1[47]"
+				}
+,
+				"obj-37::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[4]"
+				}
+,
+				"obj-34::obj-8::obj-137" : 				{
+					"parameter_longname" : "FREQUENCY[14]"
+				}
+,
+				"obj-39::obj-8::obj-105" : 				{
+					"parameter_longname" : "GAIN[7]"
+				}
+,
+				"obj-37::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[12]"
+				}
+,
+				"obj-32::obj-8::obj-137" : 				{
+					"parameter_longname" : "FREQUENCY[17]"
+				}
+,
+				"obj-20::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[50]"
+				}
+,
+				"obj-38::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[29]"
+				}
+,
+				"obj-34::obj-8::obj-108" : 				{
+					"parameter_longname" : "Q[16]"
+				}
+,
+				"obj-20::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[43]"
+				}
+,
+				"obj-81::obj-15" : 				{
+					"parameter_longname" : "live.gain~[53]"
+				}
+,
+				"obj-37::obj-8::obj-69" : 				{
+					"parameter_longname" : "Q[13]"
+				}
+,
+				"obj-32::obj-8::obj-108" : 				{
+					"parameter_longname" : "Q[19]"
+				}
+,
+				"obj-39::obj-8::obj-133" : 				{
+					"parameter_longname" : "GAIN[8]"
+				}
+,
+				"obj-38::obj-8::obj-18" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-38::obj-8::obj-44" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-38::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[3]"
+				}
+,
+				"obj-32::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[12]"
+				}
+,
+				"obj-34::obj-30::obj-3" : 				{
+					"parameter_longname" : "AUX 1[34]"
+				}
+,
+				"obj-20::obj-8::obj-123" : 				{
+					"parameter_longname" : "FREQUENCY[21]"
+				}
+,
+				"obj-38::obj-8::obj-47" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-32::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[13]"
+				}
+,
+				"obj-34::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[35]"
+				}
+,
+				"obj-32::obj-8::obj-105" : 				{
+					"parameter_longname" : "GAIN[24]"
+				}
+,
+				"obj-38::obj-8::obj-50" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-37::obj-30::obj-51" : 				{
+					"parameter_longname" : "live.gain~[40]"
+				}
+,
+				"obj-34::obj-8::obj-133" : 				{
+					"parameter_longname" : "GAIN[20]"
+				}
+,
+				"obj-39::obj-30::obj-47" : 				{
+					"parameter_longname" : "live.gain~[29]"
+				}
+,
+				"obj-34::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[23]"
+				}
+,
+				"obj-32::obj-8::obj-133" : 				{
+					"parameter_longname" : "GAIN[25]"
+				}
+,
+				"obj-20::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[25]"
+				}
+,
+				"obj-37::obj-30::obj-47" : 				{
+					"parameter_longname" : "live.gain~[41]"
+				}
+,
+				"obj-34::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[13]"
+				}
+,
+				"obj-38::obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[1]"
+				}
+,
+				"obj-32::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[20]"
+				}
+,
+				"obj-20::obj-8::obj-119" : 				{
+					"parameter_longname" : "GAIN[36]"
+				}
+,
+				"obj-37::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[42]"
+				}
+,
+				"obj-34::obj-8::obj-69" : 				{
+					"parameter_longname" : "Q[18]"
+				}
+,
+				"obj-39::obj-39" : 				{
+					"parameter_longname" : "live.gain~[36]"
+				}
+,
+				"obj-32::obj-8::obj-69" : 				{
+					"parameter_longname" : "Q[21]"
+				}
+,
+				"obj-38::obj-8::obj-133" : 				{
+					"parameter_longname" : "GAIN[10]"
+				}
+,
+				"obj-38::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[13]"
+				}
+,
+				"obj-20::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[42]"
+				}
+,
+				"obj-38::obj-30::obj-49" : 				{
+					"parameter_longname" : "live.gain~[1]"
+				}
+,
+				"obj-37::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[14]"
+				}
+,
+				"obj-37::obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[2]"
+				}
+,
+				"obj-32::obj-30::obj-4" : 				{
+					"parameter_longname" : "AUX 1[38]"
+				}
+,
+				"obj-39::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[8]"
+				}
+,
+				"obj-39::obj-30::obj-51" : 				{
+					"parameter_longname" : "live.gain~[28]"
+				}
+,
+				"obj-38::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[9]"
+				}
+,
+				"obj-38::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[30]"
+				}
+,
+				"obj-20::obj-39" : 				{
+					"parameter_longname" : "live.gain~[52]"
+				}
+,
+				"obj-39::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[26]"
+				}
+,
+				"obj-46::obj-15::obj-13" : 				{
+					"parameter_longname" : "live.gain~[57]"
+				}
+,
+				"obj-37::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[16]"
+				}
+,
+				"obj-32::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[39]"
+				}
+,
+				"obj-32::obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[3]"
+				}
+,
+				"obj-46::obj-15::obj-4" : 				{
+					"parameter_longname" : "AUX 1[44]"
+				}
+,
+				"obj-38::obj-8::obj-137" : 				{
+					"parameter_longname" : "FREQUENCY[2]"
+				}
+,
+				"obj-34::obj-30::obj-47" : 				{
+					"parameter_longname" : "live.gain~[44]"
+				}
+,
+				"obj-39::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[4]"
+				}
+,
+				"obj-34::obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[14]"
+				}
+,
+				"obj-37::obj-30::obj-49" : 				{
+					"parameter_longname" : "live.gain~[5]"
+				}
+,
+				"obj-20::obj-8::obj-105" : 				{
+					"parameter_longname" : "GAIN[39]"
+				}
+,
+				"obj-39::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[35]"
+				}
+,
+				"obj-37::obj-8::obj-123" : 				{
+					"parameter_longname" : "FREQUENCY[11]"
+				}
+,
+				"obj-20::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[41]"
+				}
+,
+				"obj-46::obj-15::obj-6" : 				{
+					"parameter_longname" : "AUX 1[46]"
+				}
+,
+				"obj-38::obj-30::obj-3" : 				{
+					"parameter_longname" : "AUX 1[30]"
+				}
+,
+				"obj-34::obj-8::obj-122" : 				{
+					"parameter_longname" : "Q[15]"
+				}
+,
+				"obj-20::obj-30::obj-3" : 				{
+					"parameter_longname" : "AUX 1[40]"
+				}
+,
+				"obj-38::obj-8::obj-105" : 				{
+					"parameter_longname" : "GAIN[9]"
+				}
+,
+				"obj-38::obj-8::obj-20" : 				{
+					"parameter_initial" : 0.0,
+					"parameter_initial_enable" : 1
+				}
+,
+				"obj-32::obj-30::obj-3" : 				{
+					"parameter_longname" : "AUX 1[36]"
+				}
+,
+				"obj-39::obj-8::obj-108" : 				{
+					"parameter_longname" : "Q[7]"
+				}
+,
+				"obj-34::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[21]"
+				}
+,
+				"obj-20::obj-8::obj-70" : 				{
+					"parameter_longname" : "FREQUENCY[22]"
+				}
+,
+				"obj-20::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[51]"
+				}
+,
+				"obj-38::obj-8::obj-108" : 				{
+					"parameter_longname" : "Q[5]"
+				}
+,
+				"obj-37::obj-8::obj-136" : 				{
+					"parameter_longname" : "Q[12]"
+				}
+,
+				"obj-32::obj-30::obj-1" : 				{
+					"parameter_longname" : "AUX 1[37]"
+				}
+,
+				"obj-39::obj-8::obj-123" : 				{
+					"parameter_longname" : "FREQUENCY[4]"
+				}
+,
+				"obj-34::obj-30::obj-49" : 				{
+					"parameter_longname" : "live.gain~[6]"
+				}
+,
+				"obj-20::obj-8::obj-137" : 				{
+					"parameter_longname" : "FREQUENCY[23]"
+				}
+,
+				"obj-38::obj-8::obj-109" : 				{
+					"parameter_longname" : "FREQUENCY[1]"
+				}
+,
+				"obj-37::obj-8::obj-119" : 				{
+					"parameter_longname" : "GAIN[17]"
+				}
+,
+				"obj-32::obj-60::obj-7" : 				{
+					"parameter_longname" : "GAIN[28]"
+				}
+,
+				"obj-39::obj-8::obj-119" : 				{
+					"parameter_longname" : "GAIN[6]"
+				}
+,
+				"obj-39::obj-30::obj-49" : 				{
+					"parameter_longname" : "live.gain~[26]"
 				}
 ,
 				"obj-34::obj-30::obj-51" : 				{
@@ -2804,136 +3174,48 @@
 					"parameter_longname" : "Q[26]"
 				}
 ,
-				"obj-37::obj-30::obj-1" : 				{
-					"parameter_longname" : "AUX 1[4]"
+				"obj-20::obj-51::obj-18" : 				{
+					"parameter_longname" : "live.dial[4]"
+				}
+,
+				"obj-38::obj-8::obj-82" : 				{
+					"parameter_longname" : "GAIN[11]"
+				}
+,
+				"obj-37::obj-30::obj-2" : 				{
+					"parameter_longname" : "AUX 1[2]"
 				}
 ,
 				"obj-37::obj-39" : 				{
 					"parameter_longname" : "live.gain~[43]"
 				}
 ,
-				"obj-32::obj-8::obj-133" : 				{
-					"parameter_longname" : "GAIN[25]"
+				"obj-38::obj-39" : 				{
+					"parameter_longname" : "live.gain~[38]"
 				}
 ,
-				"obj-34::obj-30::obj-47" : 				{
-					"parameter_longname" : "live.gain~[44]"
-				}
-,
-				"obj-20::obj-8::obj-119" : 				{
-					"parameter_longname" : "GAIN[36]"
+				"obj-34::obj-60::obj-2" : 				{
+					"parameter_longname" : "live.gain~[45]"
 				}
 ,
 				"obj-38::obj-8::obj-69" : 				{
 					"parameter_longname" : "Q[6]"
 				}
 ,
-				"obj-32::obj-30::obj-4" : 				{
-					"parameter_longname" : "AUX 1[38]"
-				}
-,
-				"obj-34::obj-60::obj-7" : 				{
-					"parameter_longname" : "GAIN[23]"
-				}
-,
-				"obj-20::obj-30::obj-2" : 				{
-					"parameter_longname" : "AUX 1[43]"
-				}
-,
-				"obj-38::obj-8::obj-105" : 				{
-					"parameter_longname" : "GAIN[9]"
-				}
-,
-				"obj-38::obj-30::obj-47" : 				{
-					"parameter_longname" : "live.gain~[2]"
-				}
-,
-				"obj-32::obj-30::obj-2" : 				{
-					"parameter_longname" : "AUX 1[39]"
-				}
-,
-				"obj-37::obj-8::obj-123" : 				{
-					"parameter_longname" : "FREQUENCY[11]"
-				}
-,
-				"obj-20::obj-30::obj-50" : 				{
-					"parameter_longname" : "live.gain~[50]"
-				}
-,
-				"obj-38::obj-8::obj-123" : 				{
-					"parameter_longname" : "FREQUENCY[5]"
+				"obj-37::obj-30::obj-50" : 				{
+					"parameter_longname" : "live.gain~[39]"
 				}
 ,
 				"obj-34::obj-8::obj-123" : 				{
 					"parameter_longname" : "FREQUENCY[16]"
 				}
 ,
-				"obj-37::obj-8::obj-136" : 				{
-					"parameter_longname" : "Q[12]"
+				"obj-32::obj-8::obj-123" : 				{
+					"parameter_longname" : "FREQUENCY[19]"
 				}
 ,
-				"obj-20::obj-60::obj-7" : 				{
-					"parameter_longname" : "GAIN[40]"
-				}
-,
-				"obj-34::obj-8::obj-136" : 				{
-					"parameter_longname" : "Q[17]"
-				}
-,
-				"obj-37::obj-30::obj-51" : 				{
-					"parameter_longname" : "live.gain~[40]"
-				}
-,
-				"obj-32::obj-8::obj-69" : 				{
-					"parameter_longname" : "Q[21]"
-				}
-,
-				"obj-34::obj-8::obj-70" : 				{
-					"parameter_longname" : "FREQUENCY[15]"
-				}
-,
-				"obj-20::obj-8::obj-137" : 				{
-					"parameter_longname" : "FREQUENCY[23]"
-				}
-,
-				"obj-46::obj-15::obj-14" : 				{
-					"parameter_longname" : "live.gain~[54]"
-				}
-,
-				"obj-37::obj-30::obj-47" : 				{
-					"parameter_longname" : "live.gain~[41]"
-				}
-,
-				"obj-32::obj-8::obj-105" : 				{
-					"parameter_longname" : "GAIN[24]"
-				}
-,
-				"obj-46::obj-15::obj-5" : 				{
-					"parameter_longname" : "AUX 1[45]"
-				}
-,
-				"obj-34::obj-30::obj-49" : 				{
-					"parameter_longname" : "live.gain~[6]"
-				}
-,
-				"obj-20::obj-8::obj-82" : 				{
-					"parameter_longname" : "GAIN[37]"
-				}
-,
-				"obj-37::obj-60::obj-2" : 				{
-					"parameter_longname" : "live.gain~[42]"
-				}
-,
-				"obj-32::obj-30::obj-3" : 				{
-					"parameter_longname" : "AUX 1[36]"
-				}
-,
-				"obj-34::obj-51::obj-18" : 				{
-					"parameter_longname" : "live.dial[14]"
-				}
-,
-				"obj-20::obj-8::obj-109" : 				{
-					"parameter_longname" : "FREQUENCY[24]"
+				"obj-20::obj-30::obj-47" : 				{
+					"parameter_longname" : "live.gain~[48]"
 				}
 
 			}
@@ -2979,20 +3261,6 @@
 				"name" : "EQbank2.maxpat",
 				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/patchers",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.gather.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/odot/patchers/namespace",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/odot/patchers/namespace",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3166,48 +3434,62 @@
 			}
 , 			{
 				"name" : "Kick.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Snare1.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OH_L_48V.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OH_R_48V.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Bass.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Guitar.wav",
-				"bootpath" : "~/Documents/Max 8/Projects/CrescOlive/media",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Projects/CrescOlive/media",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OSC.maxpat",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "odotTrackSelect.maxpat",
+				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "trackSelectOnClick.maxpat",
 				"bootpath" : "~/Dropbox/CrescOlive/CrescOlive/CrescMixer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -3224,6 +3506,13 @@
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Music-and-Computing/patchers/io/Protocols/serial",
 				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Music-and-Computing/patchers/io/Protocols/serial",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.righttoleft.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/odot/patchers/ordering",
+				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3263,11 +3552,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.if.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.collect.mxo",
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.var.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3275,15 +3572,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.difference.mxo",
+				"name" : "o.collect.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3299,15 +3588,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.explode.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3362,8 +3647,8 @@
 , 			{
 				"name" : "bubble text",
 				"default" : 				{
-					"fontsize" : [ 12.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 12.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3372,16 +3657,15 @@
 , 			{
 				"name" : "dUG Yello 01-1",
 				"newobj" : 				{
-					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+					"fontface" : [ 1 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"message" : 				{
-					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3391,13 +3675,13 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"default" : 				{
-					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3408,14 +3692,15 @@
 						"autogradient" : 0
 					}
 ,
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
+					"fontsize" : [ 10.0 ]
+				}
+,
+				"toggle" : 				{
 					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
 				"button" : 				{
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
-				}
-,
-				"toggle" : 				{
 					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,
@@ -3452,16 +3737,15 @@
 , 			{
 				"name" : "default Bold-1-6",
 				"newobj" : 				{
-					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+					"fontface" : [ 1 ],
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"message" : 				{
-					"fontface" : [ 1 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
+					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3471,19 +3755,20 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"default" : 				{
-					"fontface" : [ 1 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
-				"button" : 				{
-					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 1 ]
 				}
 ,
 				"toggle" : 				{
+					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
+				}
+,
+				"button" : 				{
 					"bgcolor" : [ 1.0, 0.941176, 0.803922, 1.0 ]
 				}
 ,

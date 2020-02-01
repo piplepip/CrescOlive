@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 170.0, 55.0, 55.0, 22.0 ],
+					"text" : "pipe 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -81,7 +93,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 614.0, 25.5, 30.0, 30.0 ]
 				}
 
@@ -128,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 170.0, 40.5, 58.0, 22.0 ],
+					"patching_rect" : [ 170.0, 25.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -232,15 +244,15 @@
 					"prototypename" : "pan",
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "Pan",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 6,
 							"parameter_linknames" : 1,
 							"parameter_mmin" : -50.0,
-							"parameter_longname" : "live.dial[4]",
+							"parameter_longname" : "live.dial[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 50.0,
-							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "Pan"
+							"parameter_initial" : [ 0 ]
 						}
 
 					}
@@ -314,6 +326,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-13", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -400,7 +419,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
