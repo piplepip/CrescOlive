@@ -23,66 +23,139 @@
 #define PIXEL_PIN    36
 #define PIXEL_COUNT  8
 
+Adafruit_NeoPixel *LEDring;
+
 //Define Encoders
 Encoder enc(0, 1);
-Adafruit_NeoPixel LEDring = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, NEO_GRB + NEO_KHZ400);
+// Adafruit_NeoPixel LEDring = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, NEO_GRB + NEO_KHZ400);
 
 int rvalue = 1;
 int pixelcount = 8;
 
-void setup() {
-  SLIPSerial.begin(9600);   // set this as high as you can reliably run on your platform
-  #if ARDUINO >= 100
-    while(!Serial); //Leonardo "feature"
-  #endif
-  LEDring.begin();
+void LEDTest()
+{
+  for (uint16_t i=0;i<pixelcount;i++)  //Red Cycle through all LEDs of a LED Ring
+  {
+    LEDring->setPixelColor(i+1, LEDring->Color(150,0,0)); //Set Pixel Color
+    LEDring->show();
+    delay(50);
+  }
+  for (uint16_t i=0;i<pixelcount;i++)  //Green Cycle through all LEDs of a LED Ring
+  {
+    LEDring->setPixelColor(i+1, LEDring->Color(0,150,0)); //Set Pixel Color
+    LEDring->show();
+    delay(50);
+  }
+  for (uint16_t i=0;i<pixelcount;i++)  //Blue Cycle through all LEDs of a LED Ring
+  {
+    LEDring->setPixelColor(i+1, LEDring->Color(0,0,150)); //Set Pixel Color
+    LEDring->show();
+    delay(50);
+  }
+  for (uint16_t i=0;i<pixelcount;i++)  //Blue Cycle through all LEDs of a LED Ring
+  {
+    LEDring->setPixelColor(i+1, LEDring->Color(0,0,0)); //Set Pixel Color
+    LEDring->show();
+    delay(50);
+  }
+  LEDring->setPixelColor(0, LEDring->Color(2,2,2)); //Set Pixel Color
+  LEDring->show();
 }
 
-void loop() {
-  int fullLED = rvalue / 3;  //calculate fully lit LEDs
-  int restLED = rvalue % 3;  //Calculate value for partially lit LED
-  for (uint8_t i=0;i<pixelcount;i++)  //Cycle through all LEDs of a LED Ring
+void LEDcontrol(OSCMessage &msg)
+{
+    if (msg.isInt(0))
+    {
+         rvalue = msg.getInt(0);
+    }
+    
+  int fullLED = rvalue / 6;  //calculate fully lit LEDs
+  int restLED = rvalue % 6;  //Calculate value for partially lit LED
+  for (uint16_t i=0;i<pixelcount;i++)  //Cycle through all LEDs of a LED Ring
   {
     if (i <= fullLED) //Cycle through all fully lit LEDs
     {
-      LEDring.setPixelColor(i+1, LEDring.Color(150,0,0)); //Set Pixel Color
+      LEDring->setPixelColor(i+1, LEDring->Color(150,0,0)); //Set Pixel Color
     }
     if (i > fullLED+1)
     {
-      LEDring.setPixelColor(i+1, LEDring.Color(0,0,0));  //Turn off all other LEDs
+      LEDring->setPixelColor(i+1, LEDring->Color(0,0,0));  //Turn off all other LEDs
     }
     else 
     {
-      LEDring.setPixelColor(fullLED+2, LEDring.Color(restLED*50,0,0)); //Fill LED after full lit LEDs with Modulo
+      LEDring->setPixelColor(fullLED+1, LEDring->Color(restLED*25,0,0)); //Fill LED after full lit LEDs with Modulo
     }
-    
-    LEDring.show();
-    
-
-    delay(20);
+    LEDring->show();
   }
+  msg.empty();
+}
+
+void setup() {
+  Serial.begin(9600);
+  SLIPSerial.begin(9600);   // set this as high as you can reliably run on your platform
+  LEDring = new Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, NEO_GRB + NEO_KHZ800);
+  LEDring->begin();
+  LEDTest();
+}
+
+void loop() {
+
+/* // for internal control of LEDRing by Encoder only. Defunct when using OSC
+  int fullLED = rvalue / 6;  //calculate fully lit LEDs
+  int restLED = rvalue % 6;  //Calculate value for partially lit LED
+  for (uint16_t i=0;i<pixelcount;i++)  //Cycle through all LEDs of a LED Ring
+  {
+    if (i <= fullLED) //Cycle through all fully lit LEDs
+    {
+      LEDring->setPixelColor(i+1, LEDring->Color(150,0,0)); //Set Pixel Color
+    }
+    if (i > fullLED+1)
+    {
+      LEDring->setPixelColor(i+1, LEDring->Color(0,0,0));  //Turn off all other LEDs
+    }
+    else 
+    {
+      LEDring->setPixelColor(fullLED+1, LEDring->Color(restLED*25,0,0)); //Fill LED after full lit LEDs with Modulo
+    }
+    LEDring->show();
+  }
+ */ 
+
+  /*OSCBundle bundleIN;
+  int size;
+
+  while(!SLIPSerial.endofPacket())
+    if( (size =SLIPSerial.available()) > 0)
+    {
+       while(size--)
+          bundleIN.fill(SLIPSerial.read());
+     }
+  
+  if(!bundleIN.hasError())
+  {
+   bundleIN.dispatch("/track/enc/2/rvalue", LEDcontrol);
+  }*/
+
   
   long newEnc;
-  newEnc = enc.read();
+  newEnc = enc.read()*-1;                 // Encoders wired wrong way 'round...
   if (newEnc != 0) {
+    //if (newEnc < 0 && rvalue < 42) { rvalue++; }          
+    //else if (newEnc > 0 && rvalue > 0) { rvalue--; }        
+    //else if (rvalue < 0) { rvalue = 0; }                 //returns rvalue back to 0 if negative
+    //else if (rvalue > 42) { rvalue = 42; }               //returns rvalue to 21 if overshot
+    Serial.print("Ecoder Value: ");
     Serial.println(newEnc);
-    if (newEnc < 0 && rvalue < 21)           //!!!!!Encoders soldered wrong way round...
-    {
-      rvalue++;                               //!!!!!Encoders soldered wrong way round...
-    }
-    if (newEnc > 0 && rvalue > 0)         //!!!!!Encoders soldered wrong way round...
-    {
-      rvalue--;                             //!!!!!Encoders soldered wrong way round...
-    }
-    OSCMessage msg("/track/enc/1/svalue");
-    msg.add(newEnc);
+    Serial.print("rvalue: ");
+    Serial.println(rvalue);
     enc.write(0);
-
+    OSCMessage OutMsg("/track/enc/2/svalue");
+    OutMsg.add(newEnc);
     SLIPSerial.beginPacket();  
-    msg.send(SLIPSerial); // send the bytes to the SLIP stream
+    OutMsg.send(SLIPSerial); // send the bytes to the SLIP stream
     SLIPSerial.endPacket(); // mark the end of the OSC Packet
-    msg.empty(); // free space occupied by message
+    OutMsg.empty(); // free space occupied by message
+    delay(20);
   }
-  
-
+ 
 }
